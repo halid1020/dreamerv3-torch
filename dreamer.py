@@ -4,7 +4,7 @@ import os
 import pathlib
 import sys
 
-os.environ["MUJOCO_GL"] = "osmesa"
+# 
 
 import numpy as np
 import ruamel.yaml as yaml
@@ -193,6 +193,15 @@ def make_env(config, mode, id):
 
         env = minecraft.make_env(task, size=config.size, break_speed=config.break_speed)
         env = wrappers.OneHotAction(env)
+    elif suite == 'robosuite':
+        import envs.robosuite_env as robosuite_env
+        #print('config', config)
+        env = robosuite_env.Robosuite(task, config.robots, 
+                                  size=config.size,
+                                  horizon=config.horizon,
+                                  use_camera_obs=config.use_camera_obs,
+                                  action_repeat=config.action_repeat, 
+                                  seed=config.seed + id)
     else:
         raise NotImplementedError(suite)
     env = wrappers.TimeLimit(env, config.time_limit)

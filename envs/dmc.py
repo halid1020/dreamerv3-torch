@@ -1,7 +1,7 @@
 import gym
 import numpy as np
-
-
+import os
+os.environ["MUJOCO_GL"] = "osmesa"
 class DeepMindControl:
     metadata = {}
 
@@ -75,3 +75,54 @@ class DeepMindControl:
         if kwargs.get("mode", "rgb_array") != "rgb_array":
             raise ValueError("Only render mode 'rgb_array' is supported.")
         return self._env.physics.render(*self._size, camera_id=self._camera)
+
+def main():
+    # -------------------------------
+    # Create the environment
+    # -------------------------------
+    env_name = "cartpole_balance"  # Example task
+    env = DeepMindControl(name=env_name, action_repeat=1, size=(64, 64), seed=42)
+
+    print("Created environment:", env_name)
+    print("Action space:", env.action_space)
+    print("Observation space keys:", env.observation_space.spaces.keys())
+
+    # -------------------------------
+    # Reset environment
+    # -------------------------------
+    obs = env.reset()
+    print("\nInitial observation keys:", obs.keys())
+    print("Initial image shape:", obs["image"].shape)
+    print('Initial Obs keys', obs.keys() )
+
+
+    # -------------------------------
+    # Step through the environment
+    # -------------------------------
+    num_steps = 10
+    for step in range(num_steps):
+        action = env.action_space.sample()
+        obs, reward, done, info = env.step(action)
+
+        print(f"\nStep {step}")
+        print("  Reward:", reward)
+        print("  Done:", done)
+        print("  Info:", info)
+        print("  Obs keys:", obs.keys())
+        print("  Image shape:", obs["image"].shape)
+        print("  Is Terminal:", obs['is_terminal'])
+        print("  Is FirstL", obs["is_first"])
+
+        if done:
+            print("Episode terminated early. Resetting...")
+            obs = env.reset()
+
+    # -------------------------------
+    # Render one frame
+    # -------------------------------
+    frame = env.render()
+    print("\nRendered frame shape:", frame.shape)
+
+
+if __name__ == "__main__":
+    main()
