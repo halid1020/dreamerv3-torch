@@ -21,9 +21,9 @@ class TimeLimit(gym.Wrapper):
             self._step = None
         return obs, reward, done, info
 
-    def reset(self):
+    def reset(self, seed=None):
         self._step = 0
-        return self.env.reset()
+        return self.env.reset(seed)
 
 
 class NormalizeActions(gym.Wrapper):
@@ -103,6 +103,9 @@ class SelectAction(gym.Wrapper):
 
     def step(self, action):
         return self.env.step(action[self._key])
+    
+    def reset(self, seed=None):
+        return self.env.reset(seed)
 
 
 class UUID(gym.Wrapper):
@@ -111,7 +114,7 @@ class UUID(gym.Wrapper):
         timestamp = datetime.datetime.now().strftime("%Y%m%dT%H%M%S")
         self.id = f"{timestamp}-{str(uuid.uuid4().hex)}"
 
-    def reset(self):
+    def reset(self, seed=None):
         timestamp = datetime.datetime.now().strftime("%Y%m%dT%H%M%S")
         self.id = f"{timestamp}-{str(uuid.uuid4().hex)}"
-        return self.env.reset()
+        return self.env.reset(seed)

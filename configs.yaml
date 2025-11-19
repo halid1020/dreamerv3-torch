@@ -93,6 +93,9 @@ defaults:
   disag_units: 400
   disag_action_cond: False
 
+  restart: false
+  evaluate_method: 'simulate'
+
 dmc_proprio:
   steps: 5e5
   action_repeat: 2
@@ -195,3 +198,49 @@ robosuite_vision:
   robots: Panda
   horizon: 200
   use_camera_obs: false
+
+softgymgarment_vision:
+
+  encoder: {mlp_keys: '$^', cnn_keys: 'image'}
+  decoder: {mlp_keys: '$^', cnn_keys: 'image'}
+  horizon: 20
+  garment_type: longsleeve
+  picker_radius: 0.03
+  picker_threshold: 0.007
+  picker_low: [-5, 0, -5]
+  picker_high: [5, 5, 5]
+  picker_initial_pos: [[0.7, 0.2, 0.7], [-0.7, 0.2, 0.7]]
+  init_state_path: ../bimanual_garment_folding/assets/init_states
+  disp: false
+  track_semkey_on_frames: false
+  readjust_pick: false
+  provide_semkey_pos: false
+  provide_flattened_semkey_pos: false
+  provide_semkey_norm_pixel: false
+  provide_flattened_semkey_norm_pixel: false
+  grasp_mode: {around: 1.0}
+  init_mode: "crumpled"
+
+  # Task
+  num_goals: 1
+  asset_dir: assets
+  debug: false
+  alignment: simple_rigid
+  overstretch_penalty_scale: 1
+  overstretch_penalty_threshold: 0.1
+  affordance_penalty_scale: 1.0
+
+  restart: true
+
+  reward_name: coverage_alignment_with_stretch_and_affordance_penalty_high_coverage_bonus
+
+  prefill: 20 #2500
+  steps: 1e5
+  action_repeat: 1
+  envs: 1
+  parallel: false
+  train_ratio: 512
+  size: [64, 64]
+  evaluate_method: 'evaluate_sequential'
+  eval_episode_num: 5
+  video_pred_log: true # True

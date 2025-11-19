@@ -65,6 +65,7 @@ class Dreamer(nn.Module):
             )
             for _ in range(steps):
                 self._train(next(self._dataset))
+                #print('train!!!')
                 self._update_count += 1
                 self._metrics["update_count"] = self._update_count
             if self._should_log(step):
@@ -202,6 +203,9 @@ def make_env(config, mode, id):
                                   use_camera_obs=config.use_camera_obs,
                                   action_repeat=config.action_repeat, 
                                   seed=config.seed + id)
+    elif suite == 'softgymgarment':
+        from envs.garment_env.multi_garment_vectorised_fold_prim_env import MultiGarmentVectorisedFoldPrimEnv
+        env = MultiGarmentVectorisedFoldPrimEnv(task, config)
     else:
         raise NotImplementedError(suite)
     env = wrappers.TimeLimit(env, config.time_limit)
@@ -313,15 +317,27 @@ def main(config):
         if config.eval_episode_num > 0:
             print("Start evaluation.")
             eval_policy = functools.partial(agent, training=False)
-            tools.simulate(
-                eval_policy,
-                eval_envs,
-                eval_eps,
-                config.evaldir,
-                logger,
-                is_eval=True,
-                episodes=config.eval_episode_num,
-            )
+            if config.evaluate_method == 'simulate':
+                tools.simulate(
+                    eval_policy,
+                    eval_envs,
+                    eval_eps,
+                    config.evaldir,
+                    logger,
+                    is_eval=True,
+                    episodes=config.eval_episode_num,
+                )
+            elif config.evaluate_method == 'evaluate_sequential':
+                tools.evaluate_sequential(
+                    eval_policy,
+                    eval_envs[0]._env,
+                    eval_eps,
+                    config.evaldir,
+                    logger,
+                    episodes=config.eval_episode_num,
+                )
+            else:
+                raise NotImplementedError
             if config.video_pred_log:
                 video_pred = agent._wm.video_pred(next(eval_dataset))
                 logger.video("eval_openl", to_np(video_pred))
@@ -335,6 +351,7 @@ def main(config):
             limit=config.dataset_size,
             steps=config.eval_every,
             state=state,
+            restart=config.restart
         )
         items_to_save = {
             "agent_state_dict": agent.state_dict(),

@@ -136,9 +136,10 @@ def simulate(
     steps=0,
     episodes=0,
     state=None,
+    restart=False,
 ):
     # initialize or unpack simulation state
-    if state is None:
+    if state is None or restart:
         step, episode = 0, 0
         done = np.ones(len(envs), bool)
         length = np.zeros(len(envs), np.int32)
@@ -147,6 +148,8 @@ def simulate(
         reward = [0] * len(envs)
     else:
         step, episode, done, length, obs, agent_state, reward = state
+    
+    
     while (steps and step < steps) or (episodes and episode < episodes):
         # reset envs if necessary
         if done.any():
@@ -247,6 +250,110 @@ def simulate(
             # FIFO
             cache.popitem(last=False)
     return (step - steps, episode - episodes, done, length, obs, agent_state, reward)
+
+def evaluate_sequential(
+    agent,
+    env,
+    cache,
+    directory,
+    logger,
+    episodes=5
+):
+    """
+    Sequential evaluation over multiple episode IDs (eids).
+    Each episode is run one after another (not vectorized).
+    """
+
+    eval_scores = []
+    eval_lengths = []
+
+    # Optional cache for video or logging
+    if cache is None:
+        cache = {}
+
+    for eid in range(episodes):
+        
+        result = env.reset(eid)
+        obs = {k: convert(v) for k, v in result.items()}
+        obs["reward"] = 0.0
+        obs["discount"] = 1.0
+
+        # Start episode
+        done = False
+        agent_state = None
+        episode_reward = 0.0
+        episode_length = 0
+        cache[eid] = {}  # wipe per-episode cache if you want to store video, etc.
+        add_to_cache(cache, eid, obs)
+
+        while not done:
+            # Prepare agent input
+            obs_np = {k: np.array([obs[k]]) for k in obs if "log_" not in k}
+
+            # Agent step
+            action, agent_state = agent(obs_np, np.array([done]), agent_state)
+
+            # Convert action (single env)
+            if isinstance(action, dict):
+                a = {k: np.array(action[k][0].detach().cpu()) for k in action}
+            else:
+                a = np.array(action[0])
+
+            # Environment step
+            o, r, d, info = env.step(a)
+            done = d
+            episode_reward += r
+            episode_length += 1
+
+            # Update obs
+            obs = {k: convert(v) for k, v in o.items()}
+
+            # Build transition
+            transition = obs.copy()
+            if isinstance(a, dict):
+                transition.update(a)
+            else:
+                transition["action"] = a
+            transition["reward"] = r
+            transition["discount"] = info.get("discount", 1 - float(d))
+
+            add_to_cache(cache, eid, transition)
+
+        # Episode finished → logging
+        # --------------------------------------------
+        score = episode_reward
+        length = episode_length
+        eval_scores.append(score)
+        eval_lengths.append(length)
+
+        # Extract video if present
+        video = cache[eid].get("image", None)
+
+        # Log all environment-provided items
+        for key in list(cache[eid].keys()):
+            if "log_" in key:
+                logger.scalar(key, float(np.array(cache[eid][key]).sum()))
+                cache[eid].pop(key)
+
+        # Write episode-level evaluation logs
+        logger.scalar("eval_return", sum(eval_scores) / len(eval_scores))
+        logger.scalar("eval_length", sum(eval_lengths) / len(eval_lengths))
+        logger.scalar("eval_episodes", len(eval_scores))
+
+        if video is not None:
+            logger.video("eval_policy", np.array(video)[None])
+
+        logger.write(step=logger.step)
+
+        # Keep only last cache entry for video prediction later
+        cache.pop(eid, None)
+
+    return {
+        "eval_return": sum(eval_scores) / len(eval_scores),
+        "eval_length": sum(eval_lengths) / len(eval_lengths),
+        "eval_scores": eval_scores,
+        "eval_lengths": eval_lengths,
+    }
 
 
 def add_to_cache(cache, id, transition):
