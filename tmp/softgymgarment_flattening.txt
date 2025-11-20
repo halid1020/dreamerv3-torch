@@ -2,3 +2,1166 @@ Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst othe
 Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
 See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
 pybullet build time: Nov 28 2023 23:45:17
+Logdir logdir/softgymgarment_flattening
+Create envs.
+!!!!!!!!!cam_size: [480, 480]
+Prefill dataset (100 steps).
+mesh id 01389_Tshirt
+[0] dataset_size 20.0 / train_return -1.3 / train_length 20.0 / train_episodes 1.0
+mesh id 05281_Tshirt
+[0] dataset_size 40.0 / train_return -4.0 / train_length 20.0 / train_episodes 2.0
+mesh id 02753_Tshirt
+[0] dataset_size 60.0 / train_return -4.4 / train_length 20.0 / train_episodes 3.0
+mesh id 04426_Tshirt
+[0] dataset_size 80.0 / train_return -3.3 / train_length 20.0 / train_episodes 4.0
+mesh id 01742_Tshirt
+[0] dataset_size 100.0 / train_return -4.2 / train_length 20.0 / train_episodes 5.0
+Logger: (100 steps).
+Simulate agent.
+Encoder CNN shapes: {'image': (64, 64, 3)}
+Encoder MLP shapes: {}
+Decoder CNN shapes: {'image': (64, 64, 3)}
+Decoder MLP shapes: {}
+Optimizer model_opt has 15688835 variables.
+Optimizer actor_opt has 1058832 variables.
+Optimizer value_opt has 1181439 variables.
+[100] 
+Start evaluation.
+mesh id 07037_Tshirt
+[100] eval_return 15.0 / eval_length 20.0 / eval_episodes 1.0
+mesh id 01742_Tshirt
+[100] eval_return 4.9 / eval_length 20.0 / eval_episodes 2.0
+mesh id 03044_Tshirt
+[100] eval_return 0.5 / eval_length 20.0 / eval_episodes 3.0
+mesh id 06048_Tshirt
+[100] eval_return -1.4 / eval_length 20.0 / eval_episodes 4.0
+mesh id 03044_Tshirt
+[100] eval_return -2.1 / eval_length 20.0 / eval_episodes 5.0
+Start training.
+mesh id 01624_Tshirt
+[100] model_loss 712.1 / model_grad_norm 2450.4 / image_loss 706.1 / reward_loss 3.2 / cont_loss 0.2 / kl_free 1.0 / dyn_scale 0.5 / rep_scale 0.1 / dyn_loss 4.2 / rep_loss 4.2 / kl 4.1 / prior_ent 96.5 / post_ent 91.3 / normed_target_mean -0.1 / normed_target_std 0.1 / normed_target_min -0.3 / normed_target_max 0.0 / EMA_005 -0.1 / EMA_095 -0.0 / value_mean -0.0 / value_std 0.0 / value_min -0.0 / value_max -0.0 / target_mean -0.2 / target_std 0.1 / target_min -0.3 / target_max -0.0 / imag_reward_mean -0.0 / imag_reward_std 0.0 / imag_reward_min -0.0 / imag_reward_max -0.0 / imag_action_mean -0.1 / imag_action_std 0.8 / imag_action_min -1.0 / imag_action_max 1.0 / actor_entropy 10.7 / actor_loss 0.1 / actor_grad_norm 0.0 / value_loss 6.6 / value_grad_norm 12.5 / update_count 100.0 / fps 0.0
+[120] dataset_size 120.0 / train_return 108.7 / train_length 20.0 / train_episodes 6.0
+mesh id 05820_Tshirt
+[140] dataset_size 140.0 / train_return -7.2 / train_length 20.0 / train_episodes 7.0
+mesh id 07017_Tshirt
+[160] dataset_size 160.0 / train_return -6.6 / train_length 20.0 / train_episodes 8.0
+mesh id 05012_Tshirt
+[180] dataset_size 180.0 / train_return -9.5 / train_length 20.0 / train_episodes 9.0
+mesh id 02472_Tshirt
+[200] dataset_size 200.0 / train_return -9.0 / train_length 20.0 / train_episodes 10.0
+mesh id 05224_Tshirt
+[220] dataset_size 220.0 / train_return 16.7 / train_length 20.0 / train_episodes 11.0
+mesh id 04426_Tshirt
+[240] dataset_size 240.0 / train_return -2.2 / train_length 20.0 / train_episodes 12.0
+mesh id 06048_Tshirt
+[260] dataset_size 260.0 / train_return -7.6 / train_length 20.0 / train_episodes 13.0
+mesh id 01051_Tshirt
+[280] dataset_size 280.0 / train_return -13.4 / train_length 20.0 / train_episodes 14.0
+mesh id 03713_Tshirt
+[300] dataset_size 300.0 / train_return -6.9 / train_length 20.0 / train_episodes 15.0
+mesh id 03899_Tshirt
+[320] dataset_size 320.0 / train_return -5.9 / train_length 20.0 / train_episodes 16.0
+mesh id 01051_Tshirt
+[340] dataset_size 340.0 / train_return -3.8 / train_length 20.0 / train_episodes 17.0
+mesh id 06568_Tshirt
+[360] dataset_size 360.0 / train_return -5.8 / train_length 20.0 / train_episodes 18.0
+mesh id 04027_Tshirt
+[380] dataset_size 380.0 / train_return 193.3 / train_length 20.0 / train_episodes 19.0
+mesh id 06855_Tshirt
+[400] dataset_size 400.0 / train_return -4.5 / train_length 20.0 / train_episodes 20.0
+mesh id 01238_Tshirt
+[420] dataset_size 420.0 / train_return -4.6 / train_length 20.0 / train_episodes 21.0
+mesh id 01051_Tshirt
+[440] dataset_size 440.0 / train_return -6.7 / train_length 20.0 / train_episodes 22.0
+mesh id 01051_Tshirt
+[460] dataset_size 460.0 / train_return -9.5 / train_length 20.0 / train_episodes 23.0
+mesh id 05820_Tshirt
+[480] dataset_size 480.0 / train_return -7.3 / train_length 20.0 / train_episodes 24.0
+mesh id 02753_Tshirt
+[500] dataset_size 500.0 / train_return -6.9 / train_length 20.0 / train_episodes 25.0
+mesh id 02753_Tshirt
+[520] dataset_size 520.0 / train_return -7.3 / train_length 20.0 / train_episodes 26.0
+mesh id 06105_Tshirt
+[540] dataset_size 540.0 / train_return 193.4 / train_length 20.0 / train_episodes 27.0
+mesh id 01238_Tshirt
+[560] dataset_size 560.0 / train_return -5.0 / train_length 20.0 / train_episodes 28.0
+mesh id 06855_Tshirt
+[580] dataset_size 580.0 / train_return -1.4 / train_length 20.0 / train_episodes 29.0
+mesh id 03922_Tshirt
+[600] dataset_size 600.0 / train_return -8.8 / train_length 20.0 / train_episodes 30.0
+mesh id 01051_Tshirt
+[620] dataset_size 620.0 / train_return -5.3 / train_length 20.0 / train_episodes 31.0
+mesh id 04637_Tshirt
+[640] dataset_size 640.0 / train_return -6.7 / train_length 20.0 / train_episodes 32.0
+mesh id 05820_Tshirt
+[660] dataset_size 660.0 / train_return -11.8 / train_length 20.0 / train_episodes 33.0
+mesh id 06568_Tshirt
+[680] dataset_size 680.0 / train_return 193.0 / train_length 20.0 / train_episodes 34.0
+mesh id 05281_Tshirt
+[700] dataset_size 700.0 / train_return -6.9 / train_length 20.0 / train_episodes 35.0
+mesh id 07017_Tshirt
+[720] dataset_size 720.0 / train_return -4.9 / train_length 20.0 / train_episodes 36.0
+mesh id 04637_Tshirt
+[740] dataset_size 740.0 / train_return 194.7 / train_length 20.0 / train_episodes 37.0
+mesh id 03044_Tshirt
+[760] dataset_size 760.0 / train_return -5.9 / train_length 20.0 / train_episodes 38.0
+mesh id 01389_Tshirt
+[780] dataset_size 780.0 / train_return -2.5 / train_length 20.0 / train_episodes 39.0
+mesh id 03044_Tshirt
+[800] dataset_size 800.0 / train_return -5.7 / train_length 20.0 / train_episodes 40.0
+mesh id 05012_Tshirt
+[820] dataset_size 820.0 / train_return -4.9 / train_length 20.0 / train_episodes 41.0
+mesh id 07639_Tshirt
+[840] dataset_size 840.0 / train_return -5.2 / train_length 20.0 / train_episodes 42.0
+mesh id 05281_Tshirt
+[860] dataset_size 860.0 / train_return -5.2 / train_length 20.0 / train_episodes 43.0
+mesh id 05596_Tshirt
+[880] dataset_size 880.0 / train_return 193.0 / train_length 20.0 / train_episodes 44.0
+mesh id 05596_Tshirt
+[900] dataset_size 900.0 / train_return 192.9 / train_length 20.0 / train_episodes 45.0
+mesh id 06568_Tshirt
+[920] dataset_size 920.0 / train_return 193.1 / train_length 20.0 / train_episodes 46.0
+mesh id 05596_Tshirt
+[940] dataset_size 940.0 / train_return -8.4 / train_length 20.0 / train_episodes 47.0
+mesh id 03044_Tshirt
+[960] dataset_size 960.0 / train_return -5.2 / train_length 20.0 / train_episodes 48.0
+mesh id 07017_Tshirt
+[980] dataset_size 980.0 / train_return -6.5 / train_length 20.0 / train_episodes 49.0
+mesh id 07037_Tshirt
+[1000] dataset_size 1000.0 / train_return -6.7 / train_length 20.0 / train_episodes 50.0
+mesh id 01051_Tshirt
+[1020] dataset_size 1020.0 / train_return -0.6 / train_length 20.0 / train_episodes 51.0
+mesh id 04637_Tshirt
+[1040] dataset_size 1040.0 / train_return -5.7 / train_length 20.0 / train_episodes 52.0
+mesh id 02149_Tshirt
+[1060] dataset_size 1060.0 / train_return -8.7 / train_length 20.0 / train_episodes 53.0
+mesh id 01163_Tshirt
+[1080] dataset_size 1080.0 / train_return 192.9 / train_length 20.0 / train_episodes 54.0
+mesh id 05281_Tshirt
+[1100] dataset_size 1100.0 / train_return -7.3 / train_length 20.0 / train_episodes 55.0
+mesh id 01163_Tshirt
+[1120] dataset_size 1120.0 / train_return -0.4 / train_length 20.0 / train_episodes 56.0
+mesh id 02582_Tshirt
+[1140] dataset_size 1140.0 / train_return -5.0 / train_length 20.0 / train_episodes 57.0
+mesh id 01051_Tshirt
+[1160] dataset_size 1160.0 / train_return 193.8 / train_length 20.0 / train_episodes 58.0
+mesh id 03899_Tshirt
+[1180] dataset_size 1180.0 / train_return -7.2 / train_length 20.0 / train_episodes 59.0
+mesh id 06855_Tshirt
+[1200] dataset_size 1200.0 / train_return -8.6 / train_length 20.0 / train_episodes 60.0
+mesh id 06855_Tshirt
+[1220] dataset_size 1220.0 / train_return -2.9 / train_length 20.0 / train_episodes 61.0
+mesh id 03713_Tshirt
+[1240] dataset_size 1240.0 / train_return 193.2 / train_length 20.0 / train_episodes 62.0
+mesh id 03044_Tshirt
+[1260] dataset_size 1260.0 / train_return -8.0 / train_length 20.0 / train_episodes 63.0
+mesh id 05281_Tshirt
+[1280] dataset_size 1280.0 / train_return -7.8 / train_length 20.0 / train_episodes 64.0
+mesh id 05012_Tshirt
+[1300] dataset_size 1300.0 / train_return -8.4 / train_length 20.0 / train_episodes 65.0
+mesh id 01051_Tshirt
+[1320] dataset_size 1320.0 / train_return -3.9 / train_length 20.0 / train_episodes 66.0
+mesh id 01051_Tshirt
+[1340] dataset_size 1340.0 / train_return -1.1 / train_length 20.0 / train_episodes 67.0
+mesh id 02149_Tshirt
+[1360] dataset_size 1360.0 / train_return -5.6 / train_length 20.0 / train_episodes 68.0
+mesh id 02753_Tshirt
+[1380] dataset_size 1380.0 / train_return -8.7 / train_length 20.0 / train_episodes 69.0
+mesh id 01051_Tshirt
+[1400] dataset_size 1400.0 / train_return -5.5 / train_length 20.0 / train_episodes 70.0
+mesh id 06855_Tshirt
+[1420] dataset_size 1420.0 / train_return -6.4 / train_length 20.0 / train_episodes 71.0
+mesh id 02149_Tshirt
+[1440] dataset_size 1440.0 / train_return -6.0 / train_length 20.0 / train_episodes 72.0
+mesh id 03922_Tshirt
+[1460] dataset_size 1460.0 / train_return -5.8 / train_length 20.0 / train_episodes 73.0
+mesh id 03713_Tshirt
+[1480] dataset_size 1480.0 / train_return 193.1 / train_length 20.0 / train_episodes 74.0
+mesh id 07639_Tshirt
+[1500] dataset_size 1500.0 / train_return -7.0 / train_length 20.0 / train_episodes 75.0
+mesh id 03942_Tshirt
+[1520] dataset_size 1520.0 / train_return -4.5 / train_length 20.0 / train_episodes 76.0
+mesh id 02753_Tshirt
+[1540] dataset_size 1540.0 / train_return -2.0 / train_length 20.0 / train_episodes 77.0
+mesh id 01624_Tshirt
+[1560] dataset_size 1560.0 / train_return 193.3 / train_length 20.0 / train_episodes 78.0
+mesh id 02219_Tshirt
+[1580] dataset_size 1580.0 / train_return -7.1 / train_length 20.0 / train_episodes 79.0
+mesh id 01163_Tshirt
+[1600] dataset_size 1600.0 / train_return 192.8 / train_length 20.0 / train_episodes 80.0
+mesh id 01816_Tshirt
+[1620] dataset_size 1620.0 / train_return 192.8 / train_length 20.0 / train_episodes 81.0
+mesh id 01742_Tshirt
+[1640] dataset_size 1640.0 / train_return -6.4 / train_length 20.0 / train_episodes 82.0
+mesh id 07037_Tshirt
+[1660] dataset_size 1660.0 / train_return -6.8 / train_length 20.0 / train_episodes 83.0
+mesh id 02753_Tshirt
+[1680] dataset_size 1680.0 / train_return -4.8 / train_length 20.0 / train_episodes 84.0
+mesh id 05012_Tshirt
+[1700] dataset_size 1700.0 / train_return -7.7 / train_length 20.0 / train_episodes 85.0
+mesh id 03942_Tshirt
+[1720] dataset_size 1720.0 / train_return -4.5 / train_length 20.0 / train_episodes 86.0
+mesh id 01624_Tshirt
+[1740] dataset_size 1740.0 / train_return 193.4 / train_length 20.0 / train_episodes 87.0
+mesh id 03922_Tshirt
+[1760] dataset_size 1760.0 / train_return -4.8 / train_length 20.0 / train_episodes 88.0
+mesh id 01816_Tshirt
+[1780] dataset_size 1780.0 / train_return 193.0 / train_length 20.0 / train_episodes 89.0
+mesh id 01816_Tshirt
+[1800] dataset_size 1800.0 / train_return 193.0 / train_length 20.0 / train_episodes 90.0
+mesh id 05820_Tshirt
+[1820] dataset_size 1820.0 / train_return -8.9 / train_length 20.0 / train_episodes 91.0
+mesh id 03899_Tshirt
+[1840] dataset_size 1840.0 / train_return -3.9 / train_length 20.0 / train_episodes 92.0
+mesh id 07639_Tshirt
+[1860] dataset_size 1860.0 / train_return -0.8 / train_length 20.0 / train_episodes 93.0
+mesh id 07037_Tshirt
+[1880] dataset_size 1880.0 / train_return -6.4 / train_length 20.0 / train_episodes 94.0
+mesh id 05820_Tshirt
+[1900] dataset_size 1900.0 / train_return -5.9 / train_length 20.0 / train_episodes 95.0
+mesh id 06048_Tshirt
+[1920] dataset_size 1920.0 / train_return -4.6 / train_length 20.0 / train_episodes 96.0
+mesh id 06855_Tshirt
+[1940] dataset_size 1940.0 / train_return -7.7 / train_length 20.0 / train_episodes 97.0
+mesh id 06048_Tshirt
+[1960] dataset_size 1960.0 / train_return -6.1 / train_length 20.0 / train_episodes 98.0
+mesh id 06105_Tshirt
+[1980] dataset_size 1980.0 / train_return 193.3 / train_length 20.0 / train_episodes 99.0
+mesh id 07017_Tshirt
+[2000] dataset_size 2000.0 / train_return -5.5 / train_length 20.0 / train_episodes 100.0
+mesh id 02582_Tshirt
+[2020] dataset_size 2020.0 / train_return -4.9 / train_length 20.0 / train_episodes 101.0
+mesh id 05991_Tshirt
+[2040] dataset_size 2040.0 / train_return 193.0 / train_length 20.0 / train_episodes 102.0
+mesh id 03899_Tshirt
+[2060] dataset_size 2060.0 / train_return -9.1 / train_length 20.0 / train_episodes 103.0
+mesh id 01389_Tshirt
+[2080] dataset_size 2080.0 / train_return -6.5 / train_length 20.0 / train_episodes 104.0
+mesh id 04027_Tshirt
+[2100] dataset_size 2100.0 / train_return 193.2 / train_length 20.0 / train_episodes 105.0
+mesh id 01051_Tshirt
+[2120] dataset_size 2120.0 / train_return -7.3 / train_length 20.0 / train_episodes 106.0
+mesh id 02753_Tshirt
+[2140] dataset_size 2140.0 / train_return -5.8 / train_length 20.0 / train_episodes 107.0
+mesh id 02753_Tshirt
+[2160] dataset_size 2160.0 / train_return -6.6 / train_length 20.0 / train_episodes 108.0
+mesh id 06105_Tshirt
+[2180] dataset_size 2180.0 / train_return 193.5 / train_length 20.0 / train_episodes 109.0
+mesh id 06568_Tshirt
+[2200] dataset_size 2200.0 / train_return 192.9 / train_length 20.0 / train_episodes 110.0
+mesh id 01742_Tshirt
+[2220] dataset_size 2220.0 / train_return -5.2 / train_length 20.0 / train_episodes 111.0
+mesh id 01816_Tshirt
+[2240] dataset_size 2240.0 / train_return -6.6 / train_length 20.0 / train_episodes 112.0
+mesh id 03713_Tshirt
+[2260] dataset_size 2260.0 / train_return -9.4 / train_length 20.0 / train_episodes 113.0
+mesh id 01163_Tshirt
+[2280] dataset_size 2280.0 / train_return -3.2 / train_length 20.0 / train_episodes 114.0
+mesh id 06048_Tshirt
+[2300] dataset_size 2300.0 / train_return -2.7 / train_length 20.0 / train_episodes 115.0
+mesh id 04571_Tshirt
+[2320] dataset_size 2320.0 / train_return -4.3 / train_length 20.0 / train_episodes 116.0
+mesh id 05596_Tshirt
+[2340] dataset_size 2340.0 / train_return -7.8 / train_length 20.0 / train_episodes 117.0
+mesh id 01238_Tshirt
+[2360] dataset_size 2360.0 / train_return -6.6 / train_length 20.0 / train_episodes 118.0
+mesh id 01742_Tshirt
+[2380] dataset_size 2380.0 / train_return -7.0 / train_length 20.0 / train_episodes 119.0
+mesh id 01051_Tshirt
+[2400] dataset_size 2400.0 / train_return -11.1 / train_length 20.0 / train_episodes 120.0
+mesh id 03044_Tshirt
+[2420] dataset_size 2420.0 / train_return -6.2 / train_length 20.0 / train_episodes 121.0
+mesh id 07017_Tshirt
+[2440] dataset_size 2440.0 / train_return -9.6 / train_length 20.0 / train_episodes 122.0
+mesh id 05281_Tshirt
+[2460] dataset_size 2460.0 / train_return -7.6 / train_length 20.0 / train_episodes 123.0
+mesh id 05596_Tshirt
+[2480] dataset_size 2480.0 / train_return -4.9 / train_length 20.0 / train_episodes 124.0
+mesh id 03044_Tshirt
+[2500] dataset_size 2500.0 / train_return -7.0 / train_length 20.0 / train_episodes 125.0
+mesh id 05991_Tshirt
+[2520] dataset_size 2520.0 / train_return -6.6 / train_length 20.0 / train_episodes 126.0
+mesh id 06105_Tshirt
+[2540] dataset_size 2540.0 / train_return 193.6 / train_length 20.0 / train_episodes 127.0
+mesh id 04571_Tshirt
+[2560] dataset_size 2560.0 / train_return 193.6 / train_length 20.0 / train_episodes 128.0
+mesh id 04571_Tshirt
+[2580] dataset_size 2580.0 / train_return -3.5 / train_length 20.0 / train_episodes 129.0
+mesh id 03044_Tshirt
+[2600] dataset_size 2600.0 / train_return -7.2 / train_length 20.0 / train_episodes 130.0
+mesh id 02472_Tshirt
+[2620] dataset_size 2620.0 / train_return -6.4 / train_length 20.0 / train_episodes 131.0
+mesh id 07037_Tshirt
+[2640] dataset_size 2640.0 / train_return -7.0 / train_length 20.0 / train_episodes 132.0
+mesh id 01051_Tshirt
+[2660] dataset_size 2660.0 / train_return -1.4 / train_length 20.0 / train_episodes 133.0
+mesh id 05596_Tshirt
+[2680] dataset_size 2680.0 / train_return -9.1 / train_length 20.0 / train_episodes 134.0
+mesh id 01163_Tshirt
+[2700] dataset_size 2700.0 / train_return 193.5 / train_length 20.0 / train_episodes 135.0
+mesh id 02149_Tshirt
+[2720] dataset_size 2720.0 / train_return -6.5 / train_length 20.0 / train_episodes 136.0
+mesh id 06855_Tshirt
+[2740] dataset_size 2740.0 / train_return -4.6 / train_length 20.0 / train_episodes 137.0
+mesh id 05596_Tshirt
+[2760] dataset_size 2760.0 / train_return -5.5 / train_length 20.0 / train_episodes 138.0
+mesh id 03044_Tshirt
+[2780] dataset_size 2780.0 / train_return -3.6 / train_length 20.0 / train_episodes 139.0
+mesh id 05596_Tshirt
+[2800] dataset_size 2800.0 / train_return -10.1 / train_length 20.0 / train_episodes 140.0
+mesh id 06568_Tshirt
+[2820] dataset_size 2820.0 / train_return 193.4 / train_length 20.0 / train_episodes 141.0
+mesh id 01238_Tshirt
+[2840] dataset_size 2840.0 / train_return -4.9 / train_length 20.0 / train_episodes 142.0
+mesh id 02582_Tshirt
+[2860] dataset_size 2860.0 / train_return 193.5 / train_length 20.0 / train_episodes 143.0
+mesh id 02219_Tshirt
+[2880] dataset_size 2880.0 / train_return -6.2 / train_length 20.0 / train_episodes 144.0
+mesh id 03044_Tshirt
+[2900] dataset_size 2900.0 / train_return -5.3 / train_length 20.0 / train_episodes 145.0
+mesh id 05728_Tshirt
+[2920] dataset_size 2920.0 / train_return 193.5 / train_length 20.0 / train_episodes 146.0
+mesh id 03899_Tshirt
+[2940] dataset_size 2940.0 / train_return -6.9 / train_length 20.0 / train_episodes 147.0
+mesh id 05596_Tshirt
+[2960] dataset_size 2960.0 / train_return -7.1 / train_length 20.0 / train_episodes 148.0
+mesh id 05012_Tshirt
+[2980] dataset_size 2980.0 / train_return -9.1 / train_length 20.0 / train_episodes 149.0
+mesh id 01742_Tshirt
+[3000] dataset_size 3000.0 / train_return -7.0 / train_length 20.0 / train_episodes 150.0
+mesh id 07037_Tshirt
+[3020] dataset_size 3020.0 / train_return -6.1 / train_length 20.0 / train_episodes 151.0
+mesh id 03922_Tshirt
+[3040] dataset_size 3040.0 / train_return -5.9 / train_length 20.0 / train_episodes 152.0
+mesh id 03922_Tshirt
+[3060] dataset_size 3060.0 / train_return -5.1 / train_length 20.0 / train_episodes 153.0
+mesh id 05820_Tshirt
+[3080] dataset_size 3080.0 / train_return -6.4 / train_length 20.0 / train_episodes 154.0
+mesh id 02219_Tshirt
+[3100] dataset_size 3100.0 / train_return -4.9 / train_length 20.0 / train_episodes 155.0
+mesh id 02472_Tshirt
+[3120] dataset_size 3120.0 / train_return -5.7 / train_length 20.0 / train_episodes 156.0
+mesh id 03899_Tshirt
+[3140] dataset_size 3140.0 / train_return -5.9 / train_length 20.0 / train_episodes 157.0
+mesh id 05728_Tshirt
+[3160] dataset_size 3160.0 / train_return -1.0 / train_length 20.0 / train_episodes 158.0
+mesh id 03044_Tshirt
+[3180] dataset_size 3180.0 / train_return -3.9 / train_length 20.0 / train_episodes 159.0
+mesh id 01163_Tshirt
+[3200] dataset_size 3200.0 / train_return -0.5 / train_length 20.0 / train_episodes 160.0
+mesh id 04637_Tshirt
+[3220] dataset_size 3220.0 / train_return -7.9 / train_length 20.0 / train_episodes 161.0
+mesh id 02149_Tshirt
+[3240] dataset_size 3240.0 / train_return -5.8 / train_length 20.0 / train_episodes 162.0
+mesh id 05281_Tshirt
+[3260] dataset_size 3260.0 / train_return -5.5 / train_length 20.0 / train_episodes 163.0
+mesh id 02149_Tshirt
+[3280] dataset_size 3280.0 / train_return -6.2 / train_length 20.0 / train_episodes 164.0
+mesh id 07037_Tshirt
+[3300] dataset_size 3300.0 / train_return -2.8 / train_length 20.0 / train_episodes 165.0
+mesh id 06105_Tshirt
+[3320] dataset_size 3320.0 / train_return 194.3 / train_length 20.0 / train_episodes 166.0
+mesh id 05728_Tshirt
+[3340] dataset_size 3340.0 / train_return -10.3 / train_length 20.0 / train_episodes 167.0
+mesh id 02149_Tshirt
+[3360] dataset_size 3360.0 / train_return -5.8 / train_length 20.0 / train_episodes 168.0
+mesh id 01816_Tshirt
+[3380] dataset_size 3380.0 / train_return 193.6 / train_length 20.0 / train_episodes 169.0
+mesh id 03899_Tshirt
+[3400] dataset_size 3400.0 / train_return -6.6 / train_length 20.0 / train_episodes 170.0
+mesh id 05728_Tshirt
+[3420] dataset_size 3420.0 / train_return -2.1 / train_length 20.0 / train_episodes 171.0
+mesh id 05596_Tshirt
+[3440] dataset_size 3440.0 / train_return -6.4 / train_length 20.0 / train_episodes 172.0
+mesh id 04637_Tshirt
+[3460] dataset_size 3460.0 / train_return 140.1 / train_length 20.0 / train_episodes 173.0
+mesh id 01051_Tshirt
+[3480] dataset_size 3480.0 / train_return -5.6 / train_length 20.0 / train_episodes 174.0
+mesh id 03044_Tshirt
+[3500] dataset_size 3500.0 / train_return -7.5 / train_length 20.0 / train_episodes 175.0
+mesh id 01163_Tshirt
+[3520] dataset_size 3520.0 / train_return 193.2 / train_length 20.0 / train_episodes 176.0
+mesh id 01389_Tshirt
+[3540] dataset_size 3540.0 / train_return -3.0 / train_length 20.0 / train_episodes 177.0
+mesh id 05728_Tshirt
+[3560] dataset_size 3560.0 / train_return -10.4 / train_length 20.0 / train_episodes 178.0
+mesh id 05224_Tshirt
+[3580] dataset_size 3580.0 / train_return 163.3 / train_length 20.0 / train_episodes 179.0
+mesh id 07037_Tshirt
+[3600] dataset_size 3600.0 / train_return -6.7 / train_length 20.0 / train_episodes 180.0
+mesh id 05596_Tshirt
+[3620] dataset_size 3620.0 / train_return -8.7 / train_length 20.0 / train_episodes 181.0
+mesh id 01742_Tshirt
+[3640] dataset_size 3640.0 / train_return -8.7 / train_length 20.0 / train_episodes 182.0
+mesh id 03713_Tshirt
+[3660] dataset_size 3660.0 / train_return 194.9 / train_length 20.0 / train_episodes 183.0
+mesh id 02753_Tshirt
+[3680] dataset_size 3680.0 / train_return -4.6 / train_length 20.0 / train_episodes 184.0
+mesh id 03713_Tshirt
+[3700] dataset_size 3700.0 / train_return 194.9 / train_length 20.0 / train_episodes 185.0
+mesh id 02472_Tshirt
+[3720] dataset_size 3720.0 / train_return -6.3 / train_length 20.0 / train_episodes 186.0
+mesh id 06568_Tshirt
+[3740] dataset_size 3740.0 / train_return 194.7 / train_length 20.0 / train_episodes 187.0
+mesh id 03942_Tshirt
+[3760] dataset_size 3760.0 / train_return -8.5 / train_length 20.0 / train_episodes 188.0
+mesh id 03044_Tshirt
+[3780] dataset_size 3780.0 / train_return -6.0 / train_length 20.0 / train_episodes 189.0
+mesh id 07017_Tshirt
+[3800] dataset_size 3800.0 / train_return -6.1 / train_length 20.0 / train_episodes 190.0
+mesh id 04027_Tshirt
+[3820] dataset_size 3820.0 / train_return 193.9 / train_length 20.0 / train_episodes 191.0
+mesh id 05281_Tshirt
+[3840] dataset_size 3840.0 / train_return -6.3 / train_length 20.0 / train_episodes 192.0
+mesh id 06105_Tshirt
+[3860] dataset_size 3860.0 / train_return 194.0 / train_length 20.0 / train_episodes 193.0
+mesh id 04637_Tshirt
+[3880] dataset_size 3880.0 / train_return 147.0 / train_length 20.0 / train_episodes 194.0
+mesh id 05820_Tshirt
+[3900] dataset_size 3900.0 / train_return -4.7 / train_length 20.0 / train_episodes 195.0
+mesh id 03899_Tshirt
+[3920] dataset_size 3920.0 / train_return -3.7 / train_length 20.0 / train_episodes 196.0
+mesh id 05728_Tshirt
+[3940] dataset_size 3940.0 / train_return -11.8 / train_length 20.0 / train_episodes 197.0
+mesh id 04426_Tshirt
+[3960] dataset_size 3960.0 / train_return 3.1 / train_length 20.0 / train_episodes 198.0
+mesh id 01051_Tshirt
+[3980] dataset_size 3980.0 / train_return -4.5 / train_length 20.0 / train_episodes 199.0
+mesh id 07037_Tshirt
+[4000] dataset_size 4000.0 / train_return -6.5 / train_length 20.0 / train_episodes 200.0
+mesh id 01742_Tshirt
+[4020] dataset_size 4020.0 / train_return -7.6 / train_length 20.0 / train_episodes 201.0
+mesh id 02472_Tshirt
+[4040] dataset_size 4040.0 / train_return -6.6 / train_length 20.0 / train_episodes 202.0
+mesh id 03922_Tshirt
+[4060] dataset_size 4060.0 / train_return -2.3 / train_length 20.0 / train_episodes 203.0
+mesh id 05281_Tshirt
+[4080] dataset_size 4080.0 / train_return -6.4 / train_length 20.0 / train_episodes 204.0
+mesh id 01624_Tshirt
+[4100] dataset_size 4100.0 / train_return 194.1 / train_length 20.0 / train_episodes 205.0
+mesh id 01051_Tshirt
+[4120] dataset_size 4120.0 / train_return -4.5 / train_length 20.0 / train_episodes 206.0
+mesh id 01742_Tshirt
+[4140] dataset_size 4140.0 / train_return -8.3 / train_length 20.0 / train_episodes 207.0
+mesh id 05281_Tshirt
+[4160] dataset_size 4160.0 / train_return -3.6 / train_length 20.0 / train_episodes 208.0
+mesh id 05820_Tshirt
+[4180] dataset_size 4180.0 / train_return -8.8 / train_length 20.0 / train_episodes 209.0
+mesh id 07017_Tshirt
+[4200] dataset_size 4200.0 / train_return -6.8 / train_length 20.0 / train_episodes 210.0
+mesh id 01816_Tshirt
+[4220] dataset_size 4220.0 / train_return -10.7 / train_length 20.0 / train_episodes 211.0
+mesh id 06855_Tshirt
+[4240] dataset_size 4240.0 / train_return -8.2 / train_length 20.0 / train_episodes 212.0
+mesh id 01051_Tshirt
+[4260] dataset_size 4260.0 / train_return 0.5 / train_length 20.0 / train_episodes 213.0
+mesh id 03899_Tshirt
+[4280] dataset_size 4280.0 / train_return -6.5 / train_length 20.0 / train_episodes 214.0
+mesh id 06105_Tshirt
+[4300] dataset_size 4300.0 / train_return 194.7 / train_length 20.0 / train_episodes 215.0
+mesh id 02753_Tshirt
+[4320] dataset_size 4320.0 / train_return -7.1 / train_length 20.0 / train_episodes 216.0
+mesh id 07017_Tshirt
+[4340] dataset_size 4340.0 / train_return -5.9 / train_length 20.0 / train_episodes 217.0
+mesh id 01163_Tshirt
+[4360] dataset_size 4360.0 / train_return 193.4 / train_length 20.0 / train_episodes 218.0
+mesh id 05820_Tshirt
+[4380] dataset_size 4380.0 / train_return -11.8 / train_length 20.0 / train_episodes 219.0
+mesh id 03899_Tshirt
+[4400] dataset_size 4400.0 / train_return -6.9 / train_length 20.0 / train_episodes 220.0
+mesh id 03044_Tshirt
+[4420] dataset_size 4420.0 / train_return -5.8 / train_length 20.0 / train_episodes 221.0
+mesh id 07037_Tshirt
+[4440] dataset_size 4440.0 / train_return -4.5 / train_length 20.0 / train_episodes 222.0
+mesh id 02753_Tshirt
+[4460] dataset_size 4460.0 / train_return -5.9 / train_length 20.0 / train_episodes 223.0
+mesh id 03044_Tshirt
+[4480] dataset_size 4480.0 / train_return -6.2 / train_length 20.0 / train_episodes 224.0
+mesh id 04571_Tshirt
+[4500] dataset_size 4500.0 / train_return -9.9 / train_length 20.0 / train_episodes 225.0
+mesh id 05991_Tshirt
+[4520] dataset_size 4520.0 / train_return 194.5 / train_length 20.0 / train_episodes 226.0
+mesh id 06855_Tshirt
+[4540] dataset_size 4540.0 / train_return 73.9 / train_length 20.0 / train_episodes 227.0
+mesh id 01238_Tshirt
+[4560] dataset_size 4560.0 / train_return -6.4 / train_length 20.0 / train_episodes 228.0
+mesh id 01163_Tshirt
+[4580] dataset_size 4580.0 / train_return -0.6 / train_length 20.0 / train_episodes 229.0
+mesh id 01163_Tshirt
+[4600] dataset_size 4600.0 / train_return -9.0 / train_length 20.0 / train_episodes 230.0
+mesh id 03922_Tshirt
+[4620] dataset_size 4620.0 / train_return -6.9 / train_length 20.0 / train_episodes 231.0
+mesh id 07639_Tshirt
+[4640] dataset_size 4640.0 / train_return -3.6 / train_length 20.0 / train_episodes 232.0
+mesh id 04027_Tshirt
+[4660] dataset_size 4660.0 / train_return 194.0 / train_length 20.0 / train_episodes 233.0
+mesh id 01816_Tshirt
+[4680] dataset_size 4680.0 / train_return -8.3 / train_length 20.0 / train_episodes 234.0
+mesh id 07017_Tshirt
+[4700] dataset_size 4700.0 / train_return -6.0 / train_length 20.0 / train_episodes 235.0
+mesh id 01163_Tshirt
+[4720] dataset_size 4720.0 / train_return 1.0 / train_length 20.0 / train_episodes 236.0
+mesh id 03899_Tshirt
+[4740] dataset_size 4740.0 / train_return -6.2 / train_length 20.0 / train_episodes 237.0
+mesh id 05991_Tshirt
+[4760] dataset_size 4760.0 / train_return -8.4 / train_length 20.0 / train_episodes 238.0
+mesh id 02753_Tshirt
+[4780] dataset_size 4780.0 / train_return -6.8 / train_length 20.0 / train_episodes 239.0
+mesh id 01816_Tshirt
+[4800] dataset_size 4800.0 / train_return -10.3 / train_length 20.0 / train_episodes 240.0
+mesh id 06568_Tshirt
+[4820] dataset_size 4820.0 / train_return -5.4 / train_length 20.0 / train_episodes 241.0
+mesh id 06855_Tshirt
+[4840] dataset_size 4840.0 / train_return -8.7 / train_length 20.0 / train_episodes 242.0
+mesh id 04426_Tshirt
+[4860] dataset_size 4860.0 / train_return -5.7 / train_length 20.0 / train_episodes 243.0
+mesh id 07017_Tshirt
+[4880] dataset_size 4880.0 / train_return -3.7 / train_length 20.0 / train_episodes 244.0
+mesh id 07639_Tshirt
+[4900] dataset_size 4900.0 / train_return -3.2 / train_length 20.0 / train_episodes 245.0
+mesh id 02472_Tshirt
+[4920] dataset_size 4920.0 / train_return -6.7 / train_length 20.0 / train_episodes 246.0
+mesh id 02472_Tshirt
+[4940] dataset_size 4940.0 / train_return -6.6 / train_length 20.0 / train_episodes 247.0
+mesh id 04571_Tshirt
+[4960] dataset_size 4960.0 / train_return -10.0 / train_length 20.0 / train_episodes 248.0
+mesh id 05596_Tshirt
+[4980] dataset_size 4980.0 / train_return 194.0 / train_length 20.0 / train_episodes 249.0
+mesh id 05596_Tshirt
+[5000] dataset_size 5000.0 / train_return 193.9 / train_length 20.0 / train_episodes 250.0
+mesh id 03044_Tshirt
+[5020] dataset_size 5020.0 / train_return -5.9 / train_length 20.0 / train_episodes 251.0
+mesh id 02219_Tshirt
+[5040] dataset_size 5040.0 / train_return -6.0 / train_length 20.0 / train_episodes 252.0
+mesh id 05012_Tshirt
+[5060] dataset_size 5060.0 / train_return -7.4 / train_length 20.0 / train_episodes 253.0
+mesh id 04027_Tshirt
+[5080] dataset_size 5080.0 / train_return 194.3 / train_length 20.0 / train_episodes 254.0
+mesh id 06105_Tshirt
+[5100] dataset_size 5100.0 / train_return 194.2 / train_length 20.0 / train_episodes 255.0
+mesh id 04426_Tshirt
+[5120] dataset_size 5120.0 / train_return -5.8 / train_length 20.0 / train_episodes 256.0
+mesh id 05012_Tshirt
+[5140] dataset_size 5140.0 / train_return -5.7 / train_length 20.0 / train_episodes 257.0
+mesh id 05012_Tshirt
+[5160] dataset_size 5160.0 / train_return -4.7 / train_length 20.0 / train_episodes 258.0
+mesh id 01742_Tshirt
+[5180] dataset_size 5180.0 / train_return -7.5 / train_length 20.0 / train_episodes 259.0
+mesh id 01742_Tshirt
+[5200] dataset_size 5200.0 / train_return -7.5 / train_length 20.0 / train_episodes 260.0
+mesh id 03899_Tshirt
+[5220] dataset_size 5220.0 / train_return -9.1 / train_length 20.0 / train_episodes 261.0
+mesh id 03922_Tshirt
+[5240] dataset_size 5240.0 / train_return -4.3 / train_length 20.0 / train_episodes 262.0
+mesh id 06568_Tshirt
+[5260] dataset_size 5260.0 / train_return 51.5 / train_length 20.0 / train_episodes 263.0
+mesh id 01163_Tshirt
+[5280] dataset_size 5280.0 / train_return -7.1 / train_length 20.0 / train_episodes 264.0
+mesh id 03713_Tshirt
+[5300] dataset_size 5300.0 / train_return 133.7 / train_length 20.0 / train_episodes 265.0
+mesh id 02149_Tshirt
+[5320] dataset_size 5320.0 / train_return -6.8 / train_length 20.0 / train_episodes 266.0
+mesh id 06048_Tshirt
+[5340] dataset_size 5340.0 / train_return -6.2 / train_length 20.0 / train_episodes 267.0
+mesh id 03044_Tshirt
+[5360] dataset_size 5360.0 / train_return -7.1 / train_length 20.0 / train_episodes 268.0
+mesh id 05596_Tshirt
+[5380] dataset_size 5380.0 / train_return -5.1 / train_length 20.0 / train_episodes 269.0
+mesh id 01163_Tshirt
+[5400] dataset_size 5400.0 / train_return -2.6 / train_length 20.0 / train_episodes 270.0
+mesh id 06855_Tshirt
+[5420] dataset_size 5420.0 / train_return -6.5 / train_length 20.0 / train_episodes 271.0
+mesh id 03922_Tshirt
+[5440] dataset_size 5440.0 / train_return -5.6 / train_length 20.0 / train_episodes 272.0
+mesh id 06048_Tshirt
+[5460] dataset_size 5460.0 / train_return 194.1 / train_length 20.0 / train_episodes 273.0
+mesh id 03044_Tshirt
+[5480] dataset_size 5480.0 / train_return -7.1 / train_length 20.0 / train_episodes 274.0
+mesh id 01624_Tshirt
+[5500] dataset_size 5500.0 / train_return 193.8 / train_length 20.0 / train_episodes 275.0
+mesh id 03044_Tshirt
+[5520] dataset_size 5520.0 / train_return -4.1 / train_length 20.0 / train_episodes 276.0
+mesh id 07639_Tshirt
+[5540] dataset_size 5540.0 / train_return -5.3 / train_length 20.0 / train_episodes 277.0
+mesh id 05224_Tshirt
+[5560] dataset_size 5560.0 / train_return 193.4 / train_length 20.0 / train_episodes 278.0
+mesh id 03713_Tshirt
+[5580] dataset_size 5580.0 / train_return 194.7 / train_length 20.0 / train_episodes 279.0
+mesh id 05820_Tshirt
+[5600] dataset_size 5600.0 / train_return -6.4 / train_length 20.0 / train_episodes 280.0
+mesh id 01238_Tshirt
+[5620] dataset_size 5620.0 / train_return -7.8 / train_length 20.0 / train_episodes 281.0
+mesh id 05281_Tshirt
+[5640] dataset_size 5640.0 / train_return -7.1 / train_length 20.0 / train_episodes 282.0
+mesh id 02219_Tshirt
+[5660] dataset_size 5660.0 / train_return -5.1 / train_length 20.0 / train_episodes 283.0
+mesh id 05820_Tshirt
+[5680] dataset_size 5680.0 / train_return -8.3 / train_length 20.0 / train_episodes 284.0
+mesh id 01051_Tshirt
+[5700] dataset_size 5700.0 / train_return -4.7 / train_length 20.0 / train_episodes 285.0
+mesh id 02582_Tshirt
+[5720] dataset_size 5720.0 / train_return -3.7 / train_length 20.0 / train_episodes 286.0
+mesh id 03044_Tshirt
+[5740] dataset_size 5740.0 / train_return -7.1 / train_length 20.0 / train_episodes 287.0
+mesh id 03899_Tshirt
+[5760] dataset_size 5760.0 / train_return -6.2 / train_length 20.0 / train_episodes 288.0
+mesh id 01051_Tshirt
+[5780] dataset_size 5780.0 / train_return 194.2 / train_length 20.0 / train_episodes 289.0
+mesh id 05596_Tshirt
+[5800] dataset_size 5800.0 / train_return -3.6 / train_length 20.0 / train_episodes 290.0
+mesh id 01624_Tshirt
+[5820] dataset_size 5820.0 / train_return 193.7 / train_length 20.0 / train_episodes 291.0
+mesh id 05728_Tshirt
+[5840] dataset_size 5840.0 / train_return -10.2 / train_length 20.0 / train_episodes 292.0
+mesh id 05281_Tshirt
+[5860] dataset_size 5860.0 / train_return -6.4 / train_length 20.0 / train_episodes 293.0
+mesh id 01163_Tshirt
+[5880] dataset_size 5880.0 / train_return -3.6 / train_length 20.0 / train_episodes 294.0
+mesh id 03922_Tshirt
+[5900] dataset_size 5900.0 / train_return -7.1 / train_length 20.0 / train_episodes 295.0
+mesh id 03922_Tshirt
+[5920] dataset_size 5920.0 / train_return -5.5 / train_length 20.0 / train_episodes 296.0
+mesh id 03899_Tshirt
+[5940] dataset_size 5940.0 / train_return -5.6 / train_length 20.0 / train_episodes 297.0
+mesh id 06855_Tshirt
+[5960] dataset_size 5960.0 / train_return -6.3 / train_length 20.0 / train_episodes 298.0
+mesh id 01238_Tshirt
+[5980] dataset_size 5980.0 / train_return -4.7 / train_length 20.0 / train_episodes 299.0
+mesh id 01051_Tshirt
+[6000] dataset_size 6000.0 / train_return 195.5 / train_length 20.0 / train_episodes 300.0
+mesh id 02753_Tshirt
+[6020] dataset_size 6020.0 / train_return -6.2 / train_length 20.0 / train_episodes 301.0
+mesh id 07017_Tshirt
+[6040] dataset_size 6040.0 / train_return -4.2 / train_length 20.0 / train_episodes 302.0
+mesh id 01163_Tshirt
+[6060] dataset_size 6060.0 / train_return 194.4 / train_length 20.0 / train_episodes 303.0
+mesh id 05596_Tshirt
+[6080] dataset_size 6080.0 / train_return 194.3 / train_length 20.0 / train_episodes 304.0
+mesh id 06568_Tshirt
+[6100] dataset_size 6100.0 / train_return -6.8 / train_length 20.0 / train_episodes 305.0
+mesh id 02149_Tshirt
+[6120] dataset_size 6120.0 / train_return -6.8 / train_length 20.0 / train_episodes 306.0
+mesh id 01389_Tshirt
+[6140] dataset_size 6140.0 / train_return -3.9 / train_length 20.0 / train_episodes 307.0
+mesh id 06855_Tshirt
+[6160] dataset_size 6160.0 / train_return -1.4 / train_length 20.0 / train_episodes 308.0
+mesh id 02149_Tshirt
+[6180] dataset_size 6180.0 / train_return -9.2 / train_length 20.0 / train_episodes 309.0
+mesh id 05728_Tshirt
+[6200] dataset_size 6200.0 / train_return 194.7 / train_length 20.0 / train_episodes 310.0
+mesh id 06855_Tshirt
+[6220] dataset_size 6220.0 / train_return -5.8 / train_length 20.0 / train_episodes 311.0
+mesh id 05596_Tshirt
+[6240] dataset_size 6240.0 / train_return 194.4 / train_length 20.0 / train_episodes 312.0
+mesh id 06105_Tshirt
+[6260] dataset_size 6260.0 / train_return 194.5 / train_length 20.0 / train_episodes 313.0
+mesh id 03044_Tshirt
+[6280] dataset_size 6280.0 / train_return -5.1 / train_length 20.0 / train_episodes 314.0
+mesh id 01051_Tshirt
+[6300] dataset_size 6300.0 / train_return 0.9 / train_length 20.0 / train_episodes 315.0
+mesh id 04637_Tshirt
+[6320] dataset_size 6320.0 / train_return 196.1 / train_length 20.0 / train_episodes 316.0
+mesh id 02753_Tshirt
+[6340] dataset_size 6340.0 / train_return -6.3 / train_length 20.0 / train_episodes 317.0
+mesh id 05224_Tshirt
+[6360] dataset_size 6360.0 / train_return 116.9 / train_length 20.0 / train_episodes 318.0
+mesh id 01051_Tshirt
+[6380] dataset_size 6380.0 / train_return -7.7 / train_length 20.0 / train_episodes 319.0
+mesh id 01163_Tshirt
+[6400] dataset_size 6400.0 / train_return 194.1 / train_length 20.0 / train_episodes 320.0
+mesh id 06855_Tshirt
+[6420] dataset_size 6420.0 / train_return -5.8 / train_length 20.0 / train_episodes 321.0
+mesh id 05596_Tshirt
+[6440] dataset_size 6440.0 / train_return -6.2 / train_length 20.0 / train_episodes 322.0
+mesh id 06855_Tshirt
+[6460] dataset_size 6460.0 / train_return -6.2 / train_length 20.0 / train_episodes 323.0
+mesh id 06105_Tshirt
+[6480] dataset_size 6480.0 / train_return 194.4 / train_length 20.0 / train_episodes 324.0
+mesh id 07017_Tshirt
+[6500] dataset_size 6500.0 / train_return -6.2 / train_length 20.0 / train_episodes 325.0
+mesh id 01051_Tshirt
+[6520] dataset_size 6520.0 / train_return 15.5 / train_length 20.0 / train_episodes 326.0
+mesh id 02753_Tshirt
+[6540] dataset_size 6540.0 / train_return -5.0 / train_length 20.0 / train_episodes 327.0
+mesh id 02149_Tshirt
+[6560] dataset_size 6560.0 / train_return -11.8 / train_length 20.0 / train_episodes 328.0
+mesh id 05224_Tshirt
+[6580] dataset_size 6580.0 / train_return 193.2 / train_length 20.0 / train_episodes 329.0
+mesh id 03044_Tshirt
+[6600] dataset_size 6600.0 / train_return -4.9 / train_length 20.0 / train_episodes 330.0
+mesh id 01816_Tshirt
+[6620] dataset_size 6620.0 / train_return 193.8 / train_length 20.0 / train_episodes 331.0
+mesh id 04571_Tshirt
+[6640] dataset_size 6640.0 / train_return -10.8 / train_length 20.0 / train_episodes 332.0
+mesh id 02149_Tshirt
+[6660] dataset_size 6660.0 / train_return -9.4 / train_length 20.0 / train_episodes 333.0
+mesh id 05281_Tshirt
+[6680] dataset_size 6680.0 / train_return -4.9 / train_length 20.0 / train_episodes 334.0
+mesh id 07017_Tshirt
+[6700] dataset_size 6700.0 / train_return -6.4 / train_length 20.0 / train_episodes 335.0
+mesh id 06105_Tshirt
+[6720] dataset_size 6720.0 / train_return 194.2 / train_length 20.0 / train_episodes 336.0
+mesh id 05224_Tshirt
+[6740] dataset_size 6740.0 / train_return 193.2 / train_length 20.0 / train_episodes 337.0
+mesh id 02149_Tshirt
+[6760] dataset_size 6760.0 / train_return -9.9 / train_length 20.0 / train_episodes 338.0
+mesh id 01051_Tshirt
+[6780] dataset_size 6780.0 / train_return -7.1 / train_length 20.0 / train_episodes 339.0
+mesh id 07017_Tshirt
+[6800] dataset_size 6800.0 / train_return -6.2 / train_length 20.0 / train_episodes 340.0
+mesh id 05596_Tshirt
+[6820] dataset_size 6820.0 / train_return 194.4 / train_length 20.0 / train_episodes 341.0
+mesh id 01238_Tshirt
+[6840] dataset_size 6840.0 / train_return -7.2 / train_length 20.0 / train_episodes 342.0
+mesh id 05820_Tshirt
+[6860] dataset_size 6860.0 / train_return -6.4 / train_length 20.0 / train_episodes 343.0
+mesh id 04637_Tshirt
+[6880] dataset_size 6880.0 / train_return -7.0 / train_length 20.0 / train_episodes 344.0
+mesh id 02582_Tshirt
+[6900] dataset_size 6900.0 / train_return 194.8 / train_length 20.0 / train_episodes 345.0
+mesh id 02753_Tshirt
+[6920] dataset_size 6920.0 / train_return -6.6 / train_length 20.0 / train_episodes 346.0
+mesh id 05991_Tshirt
+[6940] dataset_size 6940.0 / train_return -5.7 / train_length 20.0 / train_episodes 347.0
+mesh id 01051_Tshirt
+[6960] dataset_size 6960.0 / train_return 68.8 / train_length 20.0 / train_episodes 348.0
+mesh id 03044_Tshirt
+[6980] dataset_size 6980.0 / train_return -7.4 / train_length 20.0 / train_episodes 349.0
+mesh id 03899_Tshirt
+[7000] dataset_size 7000.0 / train_return -6.3 / train_length 20.0 / train_episodes 350.0
+mesh id 03713_Tshirt
+[7020] dataset_size 7020.0 / train_return -0.3 / train_length 20.0 / train_episodes 351.0
+mesh id 03044_Tshirt
+[7040] dataset_size 7040.0 / train_return -6.2 / train_length 20.0 / train_episodes 352.0
+mesh id 02753_Tshirt
+[7060] dataset_size 7060.0 / train_return -6.2 / train_length 20.0 / train_episodes 353.0
+mesh id 06855_Tshirt
+[7080] dataset_size 7080.0 / train_return -4.6 / train_length 20.0 / train_episodes 354.0
+mesh id 06105_Tshirt
+[7100] dataset_size 7100.0 / train_return 194.4 / train_length 20.0 / train_episodes 355.0
+mesh id 07017_Tshirt
+[7120] dataset_size 7120.0 / train_return -4.6 / train_length 20.0 / train_episodes 356.0
+mesh id 03899_Tshirt
+[7140] dataset_size 7140.0 / train_return -4.0 / train_length 20.0 / train_episodes 357.0
+mesh id 02149_Tshirt
+[7160] dataset_size 7160.0 / train_return -8.0 / train_length 20.0 / train_episodes 358.0
+mesh id 07639_Tshirt
+[7180] dataset_size 7180.0 / train_return -4.9 / train_length 20.0 / train_episodes 359.0
+mesh id 05012_Tshirt
+[7200] dataset_size 7200.0 / train_return -6.9 / train_length 20.0 / train_episodes 360.0
+mesh id 07639_Tshirt
+[7220] dataset_size 7220.0 / train_return -4.9 / train_length 20.0 / train_episodes 361.0
+mesh id 06855_Tshirt
+[7240] dataset_size 7240.0 / train_return -6.5 / train_length 20.0 / train_episodes 362.0
+mesh id 03942_Tshirt
+[7260] dataset_size 7260.0 / train_return -6.4 / train_length 20.0 / train_episodes 363.0
+mesh id 05012_Tshirt
+[7280] dataset_size 7280.0 / train_return -5.4 / train_length 20.0 / train_episodes 364.0
+mesh id 05281_Tshirt
+[7300] dataset_size 7300.0 / train_return -7.8 / train_length 20.0 / train_episodes 365.0
+mesh id 06855_Tshirt
+[7320] dataset_size 7320.0 / train_return -6.4 / train_length 20.0 / train_episodes 366.0
+mesh id 07639_Tshirt
+[7340] dataset_size 7340.0 / train_return -6.2 / train_length 20.0 / train_episodes 367.0
+mesh id 02472_Tshirt
+[7360] dataset_size 7360.0 / train_return -5.3 / train_length 20.0 / train_episodes 368.0
+mesh id 06048_Tshirt
+[7380] dataset_size 7380.0 / train_return -5.8 / train_length 20.0 / train_episodes 369.0
+mesh id 02582_Tshirt
+[7400] dataset_size 7400.0 / train_return -5.6 / train_length 20.0 / train_episodes 370.0
+mesh id 01816_Tshirt
+[7420] dataset_size 7420.0 / train_return 193.6 / train_length 20.0 / train_episodes 371.0
+mesh id 01624_Tshirt
+[7440] dataset_size 7440.0 / train_return 194.6 / train_length 20.0 / train_episodes 372.0
+mesh id 01051_Tshirt
+[7460] dataset_size 7460.0 / train_return 195.6 / train_length 20.0 / train_episodes 373.0
+mesh id 05596_Tshirt
+[7480] dataset_size 7480.0 / train_return 194.5 / train_length 20.0 / train_episodes 374.0
+mesh id 02149_Tshirt
+[7500] dataset_size 7500.0 / train_return -6.1 / train_length 20.0 / train_episodes 375.0
+mesh id 01238_Tshirt
+[7520] dataset_size 7520.0 / train_return -5.5 / train_length 20.0 / train_episodes 376.0
+mesh id 01816_Tshirt
+[7540] dataset_size 7540.0 / train_return 193.6 / train_length 20.0 / train_episodes 377.0
+mesh id 05012_Tshirt
+[7560] dataset_size 7560.0 / train_return -6.0 / train_length 20.0 / train_episodes 378.0
+mesh id 05991_Tshirt
+[7580] dataset_size 7580.0 / train_return 194.3 / train_length 20.0 / train_episodes 379.0
+mesh id 04571_Tshirt
+[7600] dataset_size 7600.0 / train_return -10.6 / train_length 20.0 / train_episodes 380.0
+mesh id 06855_Tshirt
+[7620] dataset_size 7620.0 / train_return -5.8 / train_length 20.0 / train_episodes 381.0
+mesh id 05596_Tshirt
+[7640] dataset_size 7640.0 / train_return -6.4 / train_length 20.0 / train_episodes 382.0
+mesh id 04027_Tshirt
+[7660] dataset_size 7660.0 / train_return 193.9 / train_length 20.0 / train_episodes 383.0
+mesh id 05991_Tshirt
+[7680] dataset_size 7680.0 / train_return -2.6 / train_length 20.0 / train_episodes 384.0
+mesh id 01163_Tshirt
+[7700] dataset_size 7700.0 / train_return -3.1 / train_length 20.0 / train_episodes 385.0
+mesh id 03044_Tshirt
+[7720] dataset_size 7720.0 / train_return -6.2 / train_length 20.0 / train_episodes 386.0
+mesh id 02149_Tshirt
+[7740] dataset_size 7740.0 / train_return -4.4 / train_length 20.0 / train_episodes 387.0
+mesh id 03899_Tshirt
+[7760] dataset_size 7760.0 / train_return -4.6 / train_length 20.0 / train_episodes 388.0
+mesh id 04637_Tshirt
+[7780] dataset_size 7780.0 / train_return -5.3 / train_length 20.0 / train_episodes 389.0
+mesh id 05281_Tshirt
+[7800] dataset_size 7800.0 / train_return -7.8 / train_length 20.0 / train_episodes 390.0
+mesh id 01051_Tshirt
+[7820] dataset_size 7820.0 / train_return 150.8 / train_length 20.0 / train_episodes 391.0
+mesh id 07017_Tshirt
+[7840] dataset_size 7840.0 / train_return -2.6 / train_length 20.0 / train_episodes 392.0
+mesh id 01051_Tshirt
+[7860] dataset_size 7860.0 / train_return -2.0 / train_length 20.0 / train_episodes 393.0
+mesh id 04637_Tshirt
+[7880] dataset_size 7880.0 / train_return -4.6 / train_length 20.0 / train_episodes 394.0
+mesh id 04637_Tshirt
+[7900] dataset_size 7900.0 / train_return -7.0 / train_length 20.0 / train_episodes 395.0
+mesh id 03044_Tshirt
+[7920] dataset_size 7920.0 / train_return -5.9 / train_length 20.0 / train_episodes 396.0
+mesh id 06105_Tshirt
+[7940] dataset_size 7940.0 / train_return 193.9 / train_length 20.0 / train_episodes 397.0
+mesh id 03922_Tshirt
+[7960] dataset_size 7960.0 / train_return -4.2 / train_length 20.0 / train_episodes 398.0
+mesh id 04571_Tshirt
+[7980] dataset_size 7980.0 / train_return -0.7 / train_length 20.0 / train_episodes 399.0
+mesh id 03899_Tshirt
+[8000] dataset_size 8000.0 / train_return -12.2 / train_length 20.0 / train_episodes 400.0
+mesh id 03899_Tshirt
+[8020] dataset_size 8020.0 / train_return -5.2 / train_length 20.0 / train_episodes 401.0
+mesh id 05012_Tshirt
+[8040] dataset_size 8040.0 / train_return -4.3 / train_length 20.0 / train_episodes 402.0
+mesh id 07037_Tshirt
+[8060] dataset_size 8060.0 / train_return 193.3 / train_length 20.0 / train_episodes 403.0
+mesh id 05820_Tshirt
+[8080] dataset_size 8080.0 / train_return -8.0 / train_length 20.0 / train_episodes 404.0
+mesh id 02472_Tshirt
+[8100] dataset_size 8100.0 / train_return -3.0 / train_length 20.0 / train_episodes 405.0
+mesh id 01051_Tshirt
+[8120] dataset_size 8120.0 / train_return -0.5 / train_length 20.0 / train_episodes 406.0
+mesh id 02149_Tshirt
+[8140] dataset_size 8140.0 / train_return -8.0 / train_length 20.0 / train_episodes 407.0
+mesh id 06048_Tshirt
+[8160] dataset_size 8160.0 / train_return -7.3 / train_length 20.0 / train_episodes 408.0
+mesh id 05728_Tshirt
+[8180] dataset_size 8180.0 / train_return -1.7 / train_length 20.0 / train_episodes 409.0
+mesh id 05991_Tshirt
+[8200] dataset_size 8200.0 / train_return 194.1 / train_length 20.0 / train_episodes 410.0
+mesh id 06855_Tshirt
+[8220] dataset_size 8220.0 / train_return -5.1 / train_length 20.0 / train_episodes 411.0
+mesh id 01051_Tshirt
+[8240] dataset_size 8240.0 / train_return -6.0 / train_length 20.0 / train_episodes 412.0
+mesh id 05281_Tshirt
+[8260] dataset_size 8260.0 / train_return -7.8 / train_length 20.0 / train_episodes 413.0
+mesh id 05820_Tshirt
+[8280] dataset_size 8280.0 / train_return -4.1 / train_length 20.0 / train_episodes 414.0
+mesh id 02472_Tshirt
+[8300] dataset_size 8300.0 / train_return -5.1 / train_length 20.0 / train_episodes 415.0
+mesh id 02753_Tshirt
+[8320] dataset_size 8320.0 / train_return -8.5 / train_length 20.0 / train_episodes 416.0
+mesh id 04637_Tshirt
+[8340] dataset_size 8340.0 / train_return 195.1 / train_length 20.0 / train_episodes 417.0
+mesh id 06048_Tshirt
+[8360] dataset_size 8360.0 / train_return 194.0 / train_length 20.0 / train_episodes 418.0
+mesh id 04637_Tshirt
+[8380] dataset_size 8380.0 / train_return -5.3 / train_length 20.0 / train_episodes 419.0
+mesh id 02219_Tshirt
+[8400] dataset_size 8400.0 / train_return -6.1 / train_length 20.0 / train_episodes 420.0
+mesh id 05012_Tshirt
+[8420] dataset_size 8420.0 / train_return -7.1 / train_length 20.0 / train_episodes 421.0
+mesh id 03044_Tshirt
+[8440] dataset_size 8440.0 / train_return -4.6 / train_length 20.0 / train_episodes 422.0
+mesh id 01238_Tshirt
+[8460] dataset_size 8460.0 / train_return -5.0 / train_length 20.0 / train_episodes 423.0
+mesh id 07037_Tshirt
+[8480] dataset_size 8480.0 / train_return 194.2 / train_length 20.0 / train_episodes 424.0
+mesh id 03044_Tshirt
+[8500] dataset_size 8500.0 / train_return -5.9 / train_length 20.0 / train_episodes 425.0
+mesh id 03044_Tshirt
+[8520] dataset_size 8520.0 / train_return -6.5 / train_length 20.0 / train_episodes 426.0
+mesh id 03044_Tshirt
+[8540] dataset_size 8540.0 / train_return -6.8 / train_length 20.0 / train_episodes 427.0
+mesh id 05728_Tshirt
+[8560] dataset_size 8560.0 / train_return -2.2 / train_length 20.0 / train_episodes 428.0
+mesh id 02753_Tshirt
+[8580] dataset_size 8580.0 / train_return -4.9 / train_length 20.0 / train_episodes 429.0
+mesh id 05596_Tshirt
+[8600] dataset_size 8600.0 / train_return 194.3 / train_length 20.0 / train_episodes 430.0
+mesh id 05991_Tshirt
+[8620] dataset_size 8620.0 / train_return -9.3 / train_length 20.0 / train_episodes 431.0
+mesh id 07037_Tshirt
+[8640] dataset_size 8640.0 / train_return -4.3 / train_length 20.0 / train_episodes 432.0
+mesh id 01163_Tshirt
+[8660] dataset_size 8660.0 / train_return -1.0 / train_length 20.0 / train_episodes 433.0
+mesh id 01238_Tshirt
+[8680] dataset_size 8680.0 / train_return -0.9 / train_length 20.0 / train_episodes 434.0
+mesh id 03713_Tshirt
+[8700] dataset_size 8700.0 / train_return -7.0 / train_length 20.0 / train_episodes 435.0
+mesh id 07017_Tshirt
+[8720] dataset_size 8720.0 / train_return -6.9 / train_length 20.0 / train_episodes 436.0
+mesh id 06048_Tshirt
+[8740] dataset_size 8740.0 / train_return 194.1 / train_length 20.0 / train_episodes 437.0
+mesh id 03044_Tshirt
+[8760] dataset_size 8760.0 / train_return -2.6 / train_length 20.0 / train_episodes 438.0
+mesh id 03713_Tshirt
+[8780] dataset_size 8780.0 / train_return -4.7 / train_length 20.0 / train_episodes 439.0
+mesh id 02753_Tshirt
+[8800] dataset_size 8800.0 / train_return -5.8 / train_length 20.0 / train_episodes 440.0
+mesh id 07037_Tshirt
+[8820] dataset_size 8820.0 / train_return -3.3 / train_length 20.0 / train_episodes 441.0
+mesh id 04571_Tshirt
+[8840] dataset_size 8840.0 / train_return 194.0 / train_length 20.0 / train_episodes 442.0
+mesh id 03922_Tshirt
+[8860] dataset_size 8860.0 / train_return -5.6 / train_length 20.0 / train_episodes 443.0
+mesh id 02472_Tshirt
+[8880] dataset_size 8880.0 / train_return -4.5 / train_length 20.0 / train_episodes 444.0
+mesh id 02753_Tshirt
+[8900] dataset_size 8900.0 / train_return -8.6 / train_length 20.0 / train_episodes 445.0
+mesh id 02753_Tshirt
+[8920] dataset_size 8920.0 / train_return -4.5 / train_length 20.0 / train_episodes 446.0
+mesh id 02753_Tshirt
+[8940] dataset_size 8940.0 / train_return -6.2 / train_length 20.0 / train_episodes 447.0
+mesh id 05820_Tshirt
+[8960] dataset_size 8960.0 / train_return -5.8 / train_length 20.0 / train_episodes 448.0
+mesh id 03044_Tshirt
+[8980] dataset_size 8980.0 / train_return -6.9 / train_length 20.0 / train_episodes 449.0
+mesh id 01816_Tshirt
+[9000] dataset_size 9000.0 / train_return -10.9 / train_length 20.0 / train_episodes 450.0
+mesh id 03713_Tshirt
+[9020] dataset_size 9020.0 / train_return 194.7 / train_length 20.0 / train_episodes 451.0
+mesh id 02149_Tshirt
+[9040] dataset_size 9040.0 / train_return -6.9 / train_length 20.0 / train_episodes 452.0
+mesh id 01624_Tshirt
+[9060] dataset_size 9060.0 / train_return 21.1 / train_length 20.0 / train_episodes 453.0
+mesh id 01389_Tshirt
+[9080] dataset_size 9080.0 / train_return -8.8 / train_length 20.0 / train_episodes 454.0
+mesh id 05596_Tshirt
+[9100] dataset_size 9100.0 / train_return 194.5 / train_length 20.0 / train_episodes 455.0
+mesh id 07639_Tshirt
+[9120] dataset_size 9120.0 / train_return -5.3 / train_length 20.0 / train_episodes 456.0
+mesh id 02149_Tshirt
+[9140] dataset_size 9140.0 / train_return -9.5 / train_length 20.0 / train_episodes 457.0
+mesh id 05728_Tshirt
+[9160] dataset_size 9160.0 / train_return 194.8 / train_length 20.0 / train_episodes 458.0
+mesh id 05820_Tshirt
+[9180] dataset_size 9180.0 / train_return -10.4 / train_length 20.0 / train_episodes 459.0
+mesh id 02753_Tshirt
+[9200] dataset_size 9200.0 / train_return -4.0 / train_length 20.0 / train_episodes 460.0
+mesh id 01389_Tshirt
+[9220] dataset_size 9220.0 / train_return -3.0 / train_length 20.0 / train_episodes 461.0
+mesh id 04637_Tshirt
+[9240] dataset_size 9240.0 / train_return -7.8 / train_length 20.0 / train_episodes 462.0
+mesh id 05820_Tshirt
+[9260] dataset_size 9260.0 / train_return -9.8 / train_length 20.0 / train_episodes 463.0
+mesh id 05728_Tshirt
+[9280] dataset_size 9280.0 / train_return 137.3 / train_length 20.0 / train_episodes 464.0
+mesh id 04571_Tshirt
+[9300] dataset_size 9300.0 / train_return -8.3 / train_length 20.0 / train_episodes 465.0
+mesh id 01624_Tshirt
+[9320] dataset_size 9320.0 / train_return 194.7 / train_length 20.0 / train_episodes 466.0
+mesh id 06855_Tshirt
+[9340] dataset_size 9340.0 / train_return -6.4 / train_length 20.0 / train_episodes 467.0
+mesh id 05820_Tshirt
+[9360] dataset_size 9360.0 / train_return -11.6 / train_length 20.0 / train_episodes 468.0
+mesh id 03044_Tshirt
+[9380] dataset_size 9380.0 / train_return -4.5 / train_length 20.0 / train_episodes 469.0
+mesh id 01163_Tshirt
+[9400] dataset_size 9400.0 / train_return 194.1 / train_length 20.0 / train_episodes 470.0
+mesh id 01624_Tshirt
+[9420] dataset_size 9420.0 / train_return 194.3 / train_length 20.0 / train_episodes 471.0
+mesh id 04426_Tshirt
+[9440] dataset_size 9440.0 / train_return -6.7 / train_length 20.0 / train_episodes 472.0
+mesh id 01624_Tshirt
+[9460] dataset_size 9460.0 / train_return 99.9 / train_length 20.0 / train_episodes 473.0
+mesh id 01742_Tshirt
+[9480] dataset_size 9480.0 / train_return -5.8 / train_length 20.0 / train_episodes 474.0
+mesh id 03044_Tshirt
+[9500] dataset_size 9500.0 / train_return -4.6 / train_length 20.0 / train_episodes 475.0
+mesh id 06105_Tshirt
+[9520] dataset_size 9520.0 / train_return 194.3 / train_length 20.0 / train_episodes 476.0
+mesh id 03899_Tshirt
+[9540] dataset_size 9540.0 / train_return -5.4 / train_length 20.0 / train_episodes 477.0
+mesh id 01051_Tshirt
+[9560] dataset_size 9560.0 / train_return 187.0 / train_length 20.0 / train_episodes 478.0
+mesh id 05820_Tshirt
+[9580] dataset_size 9580.0 / train_return -6.3 / train_length 20.0 / train_episodes 479.0
+mesh id 03922_Tshirt
+[9600] dataset_size 9600.0 / train_return -4.9 / train_length 20.0 / train_episodes 480.0
+mesh id 01163_Tshirt
+[9620] dataset_size 9620.0 / train_return -0.9 / train_length 20.0 / train_episodes 481.0
+mesh id 07017_Tshirt
+[9640] dataset_size 9640.0 / train_return -5.2 / train_length 20.0 / train_episodes 482.0
+mesh id 05728_Tshirt
+[9660] dataset_size 9660.0 / train_return 195.1 / train_length 20.0 / train_episodes 483.0
+mesh id 03713_Tshirt
+[9680] dataset_size 9680.0 / train_return 195.1 / train_length 20.0 / train_episodes 484.0
+mesh id 05281_Tshirt
+[9700] dataset_size 9700.0 / train_return -7.3 / train_length 20.0 / train_episodes 485.0
+mesh id 05820_Tshirt
+[9720] dataset_size 9720.0 / train_return -7.4 / train_length 20.0 / train_episodes 486.0
+mesh id 04571_Tshirt
+[9740] dataset_size 9740.0 / train_return 194.9 / train_length 20.0 / train_episodes 487.0
+mesh id 03044_Tshirt
+[9760] dataset_size 9760.0 / train_return -5.5 / train_length 20.0 / train_episodes 488.0
+mesh id 05991_Tshirt
+[9780] dataset_size 9780.0 / train_return -4.9 / train_length 20.0 / train_episodes 489.0
+mesh id 03713_Tshirt
+[9800] dataset_size 9800.0 / train_return 195.1 / train_length 20.0 / train_episodes 490.0
+mesh id 01051_Tshirt
+[9820] dataset_size 9820.0 / train_return 194.9 / train_length 20.0 / train_episodes 491.0
+mesh id 01051_Tshirt
+[9840] dataset_size 9840.0 / train_return 103.3 / train_length 20.0 / train_episodes 492.0
+mesh id 06048_Tshirt
+[9860] dataset_size 9860.0 / train_return 194.4 / train_length 20.0 / train_episodes 493.0
+mesh id 01163_Tshirt
+[9880] dataset_size 9880.0 / train_return -5.2 / train_length 20.0 / train_episodes 494.0
+mesh id 05820_Tshirt
+[9900] dataset_size 9900.0 / train_return -1.2 / train_length 20.0 / train_episodes 495.0
+mesh id 02753_Tshirt
+[9920] dataset_size 9920.0 / train_return -3.8 / train_length 20.0 / train_episodes 496.0
+mesh id 02753_Tshirt
+[9940] dataset_size 9940.0 / train_return -6.3 / train_length 20.0 / train_episodes 497.0
+mesh id 03922_Tshirt
+[9960] dataset_size 9960.0 / train_return -5.7 / train_length 20.0 / train_episodes 498.0
+mesh id 01051_Tshirt
+[9980] dataset_size 9980.0 / train_return 1.6 / train_length 20.0 / train_episodes 499.0
+mesh id 04027_Tshirt
+[10000] dataset_size 10000.0 / train_return 89.8 / train_length 20.0 / train_episodes 500.0
+mesh id 04637_Tshirt
+[10020] dataset_size 10020.0 / train_return 193.8 / train_length 20.0 / train_episodes 501.0
+mesh id 06105_Tshirt
+[10040] dataset_size 10040.0 / train_return 194.3 / train_length 20.0 / train_episodes 502.0
+mesh id 06568_Tshirt
+[10060] dataset_size 10060.0 / train_return -5.2 / train_length 20.0 / train_episodes 503.0
+mesh id 05012_Tshirt
+[10080] dataset_size 10080.0 / train_return -3.8 / train_length 20.0 / train_episodes 504.0
+mesh id 07639_Tshirt
+[10100] dataset_size 10100.0 / train_return -4.6 / train_length 20.0 / train_episodes 505.0
+[10100] 
+Start evaluation.
+mesh id 07037_Tshirt
+[10100] eval_return 193.9 / eval_length 20.0 / eval_episodes 1.0
+mesh id 01742_Tshirt
+[10100] eval_return 93.4 / eval_length 20.0 / eval_episodes 2.0
+mesh id 03044_Tshirt
+[10100] eval_return 60.8 / eval_length 20.0 / eval_episodes 3.0
+mesh id 06048_Tshirt
+[10100] eval_return 44.2 / eval_length 20.0 / eval_episodes 4.0
+mesh id 03044_Tshirt
+[10100] eval_return 34.2 / eval_length 20.0 / eval_episodes 5.0
+Start training.
+mesh id 01816_Tshirt
+[10100] model_loss 15.8 / model_grad_norm 43.7 / image_loss 10.2 / reward_loss 0.9 / cont_loss 0.1 / kl_free 1.0 / dyn_scale 0.5 / rep_scale 0.1 / dyn_loss 7.8 / rep_loss 7.8 / kl 7.7 / prior_ent 26.9 / post_ent 18.0 / normed_target_mean 0.2 / normed_target_std 0.4 / normed_target_min -0.0 / normed_target_max 2.5 / EMA_005 -3.8 / EMA_095 146.2 / value_mean 17.9 / value_std 43.9 / value_min -3.9 / value_max 229.8 / target_mean 21.4 / target_std 52.2 / target_min -6.7 / target_max 307.9 / imag_reward_mean 1.0 / imag_reward_std 3.1 / imag_reward_min -0.8 / imag_reward_max 17.6 / imag_action_mean -0.2 / imag_action_std 0.8 / imag_action_min -1.0 / imag_action_max 1.0 / actor_entropy 3.9 / actor_loss -0.0 / actor_grad_norm 0.3 / value_loss 2.6 / value_grad_norm 1.4 / update_count 16099.0 / fps 0.2
+[10120] dataset_size 10120.0 / train_return 193.6 / train_length 20.0 / train_episodes 506.0
+mesh id 05728_Tshirt
+[10140] dataset_size 10140.0 / train_return 194.5 / train_length 20.0 / train_episodes 507.0
+mesh id 05281_Tshirt
+[10160] dataset_size 10160.0 / train_return -7.6 / train_length 20.0 / train_episodes 508.0
+mesh id 06105_Tshirt
+[10180] dataset_size 10180.0 / train_return 194.1 / train_length 20.0 / train_episodes 509.0
+mesh id 01051_Tshirt
+[10200] dataset_size 10200.0 / train_return -4.5 / train_length 20.0 / train_episodes 510.0
+mesh id 06855_Tshirt
+[10220] dataset_size 10220.0 / train_return -5.5 / train_length 20.0 / train_episodes 511.0
+mesh id 01051_Tshirt
+[10240] dataset_size 10240.0 / train_return -5.5 / train_length 20.0 / train_episodes 512.0
+mesh id 04637_Tshirt
+[10260] dataset_size 10260.0 / train_return -5.7 / train_length 20.0 / train_episodes 513.0
+mesh id 05012_Tshirt
+[10280] dataset_size 10280.0 / train_return -9.2 / train_length 20.0 / train_episodes 514.0
+mesh id 02753_Tshirt
+[10300] dataset_size 10300.0 / train_return -7.2 / train_length 20.0 / train_episodes 515.0
+mesh id 01816_Tshirt
+[10320] dataset_size 10320.0 / train_return -11.3 / train_length 20.0 / train_episodes 516.0
+mesh id 04027_Tshirt
+[10340] dataset_size 10340.0 / train_return 194.6 / train_length 20.0 / train_episodes 517.0
+mesh id 03899_Tshirt
+[10360] dataset_size 10360.0 / train_return -13.1 / train_length 20.0 / train_episodes 518.0
+mesh id 05820_Tshirt
+[10380] dataset_size 10380.0 / train_return -5.6 / train_length 20.0 / train_episodes 519.0
+mesh id 01816_Tshirt
+[10400] dataset_size 10400.0 / train_return 193.7 / train_length 20.0 / train_episodes 520.0
+mesh id 05281_Tshirt
+[10420] dataset_size 10420.0 / train_return -7.5 / train_length 20.0 / train_episodes 521.0
+mesh id 01816_Tshirt
+[10440] dataset_size 10440.0 / train_return -11.4 / train_length 20.0 / train_episodes 522.0
+mesh id 01163_Tshirt
+[10460] dataset_size 10460.0 / train_return 193.4 / train_length 20.0 / train_episodes 523.0
+mesh id 06105_Tshirt
+[10480] dataset_size 10480.0 / train_return 194.2 / train_length 20.0 / train_episodes 524.0
+mesh id 04027_Tshirt
+[10500] dataset_size 10500.0 / train_return 194.2 / train_length 20.0 / train_episodes 525.0
+mesh id 05012_Tshirt
+[10520] dataset_size 10520.0 / train_return -7.2 / train_length 20.0 / train_episodes 526.0
+mesh id 03899_Tshirt
+[10540] dataset_size 10540.0 / train_return -6.6 / train_length 20.0 / train_episodes 527.0
+mesh id 04637_Tshirt
+[10560] dataset_size 10560.0 / train_return -7.2 / train_length 20.0 / train_episodes 528.0
+mesh id 07017_Tshirt
+[10580] dataset_size 10580.0 / train_return -6.9 / train_length 20.0 / train_episodes 529.0
+mesh id 01742_Tshirt
+[10600] dataset_size 10600.0 / train_return -6.7 / train_length 20.0 / train_episodes 530.0
+mesh id 06105_Tshirt
+[10620] dataset_size 10620.0 / train_return 194.3 / train_length 20.0 / train_episodes 531.0
+mesh id 01163_Tshirt
+[10640] dataset_size 10640.0 / train_return 193.5 / train_length 20.0 / train_episodes 532.0
+mesh id 01051_Tshirt
+[10660] dataset_size 10660.0 / train_return -4.1 / train_length 20.0 / train_episodes 533.0
+mesh id 06048_Tshirt
+[10680] dataset_size 10680.0 / train_return 194.1 / train_length 20.0 / train_episodes 534.0
+mesh id 07037_Tshirt
+[10700] dataset_size 10700.0 / train_return -6.9 / train_length 20.0 / train_episodes 535.0
+mesh id 06048_Tshirt
+[10720] dataset_size 10720.0 / train_return 194.2 / train_length 20.0 / train_episodes 536.0
+mesh id 02753_Tshirt
+[10740] dataset_size 10740.0 / train_return -3.8 / train_length 20.0 / train_episodes 537.0
+mesh id 01389_Tshirt
+[10760] dataset_size 10760.0 / train_return -3.1 / train_length 20.0 / train_episodes 538.0
+mesh id 03044_Tshirt
+[10780] dataset_size 10780.0 / train_return -6.3 / train_length 20.0 / train_episodes 539.0
+mesh id 02149_Tshirt
+[10800] dataset_size 10800.0 / train_return -10.1 / train_length 20.0 / train_episodes 540.0
+mesh id 03044_Tshirt
+[10820] dataset_size 10820.0 / train_return -7.9 / train_length 20.0 / train_episodes 541.0
+mesh id 06105_Tshirt
+[10840] dataset_size 10840.0 / train_return 194.5 / train_length 20.0 / train_episodes 542.0
+mesh id 03899_Tshirt
+[10860] dataset_size 10860.0 / train_return -8.7 / train_length 20.0 / train_episodes 543.0
+mesh id 01816_Tshirt
+[10880] dataset_size 10880.0 / train_return 193.4 / train_length 20.0 / train_episodes 544.0
+mesh id 03899_Tshirt
+[10900] dataset_size 10900.0 / train_return -5.0 / train_length 20.0 / train_episodes 545.0
+mesh id 03044_Tshirt
+[10920] dataset_size 10920.0 / train_return -5.8 / train_length 20.0 / train_episodes 546.0
+mesh id 01163_Tshirt
+[10940] dataset_size 10940.0 / train_return 194.1 / train_length 20.0 / train_episodes 547.0
+mesh id 02149_Tshirt
+[10960] dataset_size 10960.0 / train_return -5.8 / train_length 20.0 / train_episodes 548.0
+mesh id 07017_Tshirt
+[10980] dataset_size 10980.0 / train_return -4.7 / train_length 20.0 / train_episodes 549.0
+mesh id 07037_Tshirt
+[11000] dataset_size 11000.0 / train_return -4.9 / train_length 20.0 / train_episodes 550.0
+mesh id 02472_Tshirt
+[11020] dataset_size 11020.0 / train_return -5.9 / train_length 20.0 / train_episodes 551.0
+mesh id 05728_Tshirt
+[11040] dataset_size 11040.0 / train_return -8.3 / train_length 20.0 / train_episodes 552.0
+mesh id 01163_Tshirt
+[11060] dataset_size 11060.0 / train_return 193.8 / train_length 20.0 / train_episodes 553.0
+mesh id 03044_Tshirt
+[11080] dataset_size 11080.0 / train_return -5.9 / train_length 20.0 / train_episodes 554.0
+mesh id 01051_Tshirt
+[11100] dataset_size 11100.0 / train_return -6.1 / train_length 20.0 / train_episodes 555.0
+mesh id 02472_Tshirt
+[11120] dataset_size 11120.0 / train_return -4.6 / train_length 20.0 / train_episodes 556.0
+mesh id 06855_Tshirt
+[11140] dataset_size 11140.0 / train_return -10.5 / train_length 20.0 / train_episodes 557.0
+mesh id 05596_Tshirt
+[11160] dataset_size 11160.0 / train_return -7.2 / train_length 20.0 / train_episodes 558.0
+mesh id 05728_Tshirt
+[11180] dataset_size 11180.0 / train_return -0.8 / train_length 20.0 / train_episodes 559.0
+mesh id 03044_Tshirt
+[11200] dataset_size 11200.0 / train_return -5.4 / train_length 20.0 / train_episodes 560.0
+mesh id 05596_Tshirt
+[11220] 

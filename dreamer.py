@@ -72,7 +72,7 @@ class Dreamer(nn.Module):
                 for name, values in self._metrics.items():
                     self._logger.scalar(name, float(np.mean(values)))
                     self._metrics[name] = []
-                if self._config.video_pred_log:
+                if self._config.train_video_pred_log:
                     openl = self._wm.video_pred(next(self._dataset))
                     self._logger.video("train_openl", to_np(openl))
                 self._logger.write(fps=True)
@@ -257,7 +257,7 @@ def main(config):
         train_envs = [Damy(env) for env in train_envs]
         eval_envs = [Damy(env) for env in eval_envs]
     acts = train_envs[0].action_space
-    print("Action Space", acts)
+    #print("Action Space", acts)
     config.num_actions = acts.n if hasattr(acts, "n") else acts.shape[0]
 
     state = None
@@ -338,7 +338,7 @@ def main(config):
                 )
             else:
                 raise NotImplementedError
-            if config.video_pred_log:
+            if config.eval_video_pred_log:
                 video_pred = agent._wm.video_pred(next(eval_dataset))
                 logger.video("eval_openl", to_np(video_pred))
         print("Start training.")

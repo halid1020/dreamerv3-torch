@@ -267,8 +267,8 @@ class GarmentEnv(metaclass=Singleton):
         if flatten_obs:
             info['flattened_obs'] = self.get_flattened_obs()
 
-            for k, v in info['flattened_obs']['observation'].items():
-                info['observation'][f'flattened-{k}'] = v
+            # for k, v in info['flattened_obs']['observation'].items():
+            #     info['observation'][f'flattened-{k}'] = v
 
         info['done'] = self.action_step >= self.horizon
         
@@ -285,8 +285,8 @@ class GarmentEnv(metaclass=Singleton):
             info['observation']['last_flattened_step'] = self.last_flattened_step
             
             info['success'] =  self.success()
-            if info['success']:
-                info['done'] = True
+            # if info['success']:
+            #     info['done'] = True
             
             #print('ev', info['evaluation'])
             if info['evaluation'] != {}:
@@ -609,10 +609,10 @@ class GarmentEnv(metaclass=Singleton):
         # print('get obs here')
         rgbd = self._render(mode='rgbd', resolution=self.frame_resolution)
         obs['rgb'] = rgbd[:, :, :3].astype(np.uint8)
-        obs['depth'] = rgbd[:, :, 3:]
+        # obs['depth'] = rgbd[:, :, 3:]
         obs['mask'] = obs['rgb'].sum(axis=2) > 0 #self._get_cloth_mask()
         self.cloth_mask = obs['mask']
-        obs['particle_positions'] = self.get_mesh_particles_positions()
+        # obs['particle_positions'] = self.get_mesh_particles_positions()
         #obs['semkey2pid'] = self.task.semkey2pid
         obs['image'] = obs['rgb']
 

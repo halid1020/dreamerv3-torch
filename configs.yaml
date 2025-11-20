@@ -17,7 +17,7 @@ defaults:
   compile: True
   precision: 32
   debug: False
-  video_pred_log: True
+  train_video_pred_log: True
 
   # Environment
   task: 'dmc_walker_walk'
@@ -95,6 +95,7 @@ defaults:
 
   restart: false
   evaluate_method: 'simulate'
+  eval_video_pred_log: true
 
 dmc_proprio:
   steps: 5e5
@@ -203,7 +204,7 @@ softgymgarment_vision:
 
   encoder: {mlp_keys: '$^', cnn_keys: 'image'}
   decoder: {mlp_keys: '$^', cnn_keys: 'image'}
-  horizon: 20
+  
   garment_type: longsleeve
   picker_radius: 0.03
   picker_threshold: 0.007
@@ -211,7 +212,7 @@ softgymgarment_vision:
   picker_high: [5, 5, 5]
   picker_initial_pos: [[0.7, 0.2, 0.7], [-0.7, 0.2, 0.7]]
   init_state_path: ../bimanual_garment_folding/assets/init_states
-  disp: false
+  
   track_semkey_on_frames: false
   readjust_pick: false
   provide_semkey_pos: false
@@ -234,7 +235,9 @@ softgymgarment_vision:
 
   reward_name: coverage_alignment_with_stretch_and_affordance_penalty_high_coverage_bonus
 
-  prefill: 20 #2500
+  horizon: 20
+  disp: false
+  prefill: 100 #100 #2500
   steps: 1e5
   action_repeat: 1
   envs: 1
@@ -242,5 +245,6 @@ softgymgarment_vision:
   train_ratio: 512
   size: [64, 64]
   evaluate_method: 'evaluate_sequential'
-  eval_episode_num: 5
-  video_pred_log: true # True
+  eval_episode_num: 5 #5
+  eval_video_pred_log: false # True
+  batch_length: 20 #This needs to be long, for savign videos safely

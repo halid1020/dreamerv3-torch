@@ -25,6 +25,7 @@ class MultiGarmentVectorisedFoldPrimEnv(MultiGarmentEnv):
 
         info = self.action_tool.step(self, dict_action)
         self.action_step += 1
+        # print('step', self.action_step)
         self.info = self._process_info(info)
         dict_applied_action = self.info['applied_action']
         vector_action = []
@@ -33,8 +34,12 @@ class MultiGarmentVectorisedFoldPrimEnv(MultiGarmentEnv):
         #print('vector_action', vector_action)
         vector_action = np.stack(vector_action).flatten()
         self.info['applied_action'] = vector_action
+        
         obs, reward, done = self.info['observation'], self.info['reward'], self.info['done']
-        obs['is_first'] = False
-        obs['is_terminal'] = done        
+        
+        obs_ = {}
+        obs_['image'] = obs['image']
+        obs_['is_first'] = False
+        obs_['is_terminal'] = done        
         #print('reward', info['reward'])
-        return obs, reward, done, self.info
+        return obs_, reward, done, self.info

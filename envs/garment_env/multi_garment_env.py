@@ -113,12 +113,14 @@ class MultiGarmentEnv(GarmentEnv):
         self.overstretch = 0
         self.info = self._process_info({})
         obs = self.info['observation']
-        obs["is_first"] = True
-        obs["is_terminal"] = False
+        obs_ = {}
+        obs_['image'] = obs['image']
+        obs_['is_first'] = True
+        obs_['is_terminal'] = False
         self.clear_frames()
 
         
-        return obs
+        return obs_
     
     
     def get_eval_configs(self):

@@ -356,6 +356,8 @@ def evaluate_sequential(
     }
 
 
+
+
 def add_to_cache(cache, id, transition):
     if id not in cache:
         cache[id] = dict()
@@ -421,8 +423,10 @@ def from_generator(generator, batch_size):
         data = {}
         for key in batch[0].keys():
             data[key] = []
+            #print('key', key)
             for i in range(batch_size):
                 data[key].append(batch[i][key])
+                #print('batch[i][k] len', len(batch[i][key]))
             data[key] = np.stack(data[key], 0)
         yield data
 
